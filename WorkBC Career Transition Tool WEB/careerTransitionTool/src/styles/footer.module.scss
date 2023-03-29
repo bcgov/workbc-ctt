@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+$BC-blue: #234075;
+$border: 10px solid $yellow-border;
+
+
+
+
+
+
+
+
+
+.footerFoot {
+  background-color: white;
+  color: $BC-blue;
+  a {
+    color: $BC-blue;
+  }
+  div:last-of-type {
+    margin-top: 1rem;
+  }
+}
+
+.BCLogo {
+  height: 50px;
+}
+

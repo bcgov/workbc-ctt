@@ -1,0 +1,37 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+$color-error: #c40000;
+$color-warning: #eea240;
+
+.warning-icon__icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.warning-icon__icon--small {
+    font-size: 20px;
+}
+  
+.warning-icon__icon--medium {
+    font-size: 30px;
+}
+  
+.warning-icon__icon--large {
+    font-size: 40px;
+}
+  
+.warning-icon__icon--warning {
+    color: $color-warning;
+}
+.warning-icon__icon--error {
+    color: $color-error;
+}
+  
+.warning-icon__icon--triangle {
+    position: relative;
+    top: -2px;
+}
+  

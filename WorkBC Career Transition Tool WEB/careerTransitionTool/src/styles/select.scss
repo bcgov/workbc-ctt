@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+$sidebar-container: #7ccfeb;
+$main-box-container: #00acee;
+
+.select__container {
+    display: flex;
+    align-items: center;
+}
+
+.select__select {
+    width: 100%;
+}
+
+.select__warning-icon {
+    width: fit-content;
+}
+
+.ant-btn.select__button {
+    border: 0;
+    padding: 0;
+    margin-left: 6px;
+    background-color: $sidebar-container
+}
+
+.ant-btn.select__button--no-title {
+    margin-bottom: 12px;
+}

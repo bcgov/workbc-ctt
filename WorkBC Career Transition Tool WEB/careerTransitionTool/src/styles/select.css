@@ -1,0 +1,33 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+.select__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select__select {
+  width: 100%;
+}
+
+.select__warning-icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ant-btn.select__button {
+  border: 0;
+  padding: 0;
+  margin-left: 6px;
+  background-color: #7ccfeb;
+}
+
+.ant-btn.select__button--no-title {
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=select.css.map */

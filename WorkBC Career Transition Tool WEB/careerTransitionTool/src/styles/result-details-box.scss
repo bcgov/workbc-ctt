@@ -1,0 +1,73 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+
+// Layout
+.detailBox {
+    background-color: $detail-box-container;
+    color: white;
+    padding: 1rem $mobile-padding 2.0rem $mobile-padding;
+    width: 420px;
+    z-index: 10;
+
+    @include respond-to('tablet'){ 
+      padding: 1rem 2.0rem 2.0rem 2.0rem;
+      border-top: $container-border;
+      border-bottom: $container-border;
+
+    }
+    .ant-btn{
+      border: $btn-border;
+      border-radius: 10px;
+      height: 50px !important;
+      font-size: 15px;
+      font-weight: bold;
+      color: $detail-btn-color;
+    }
+    &__row{
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(flex-start);
+      margin-bottom: 4px;
+      width: 100%;
+      &--label{
+        text-align: right;
+      }
+    }
+    &__button{
+      font-family: $font-family-bold;
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      color: $tertiary;
+      &:hover{
+        color: $secondary;        
+      }
+      .anticon-forward{
+        margin-left: 5px;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+      }
+    }
+}
+
+@media (max-width: 767px) {
+    .detailBox {
+      width: 100%;
+    }
+}
+  
+@media (min-width: 768px) {
+    .detailBox {
+      width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .detailBox {
+      flex: 0 0 420px;
+    }
+}
+  
+  

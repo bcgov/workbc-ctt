@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkBC Career Transition Tool API", "WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj", "{45304988-1974-482F-ACA5-A333824D796E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkBC Career Transition Tool API Tests", "WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj", "{C8BBA631-1182-4D51-A250-F2CFD069F14D}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "WorkBC CTT Data Imports", "WorkBC CTT Data Imports\WorkBC CTT Data Imports.dtproj", "{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45304988-1974-482F-ACA5-A333824D796E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45304988-1974-482F-ACA5-A333824D796E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45304988-1974-482F-ACA5-A333824D796E}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{45304988-1974-482F-ACA5-A333824D796E}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{45304988-1974-482F-ACA5-A333824D796E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45304988-1974-482F-ACA5-A333824D796E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BBA631-1182-4D51-A250-F2CFD069F14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Debug|Any CPU.ActiveCfg = Development
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Debug|Any CPU.Build.0 = Development
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Development|Any CPU.ActiveCfg = Development
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Development|Any CPU.Build.0 = Development
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Release|Any CPU.ActiveCfg = Development
+		{8ACFA8D3-8A0D-472D-886C-12BA56A6CEC6}.Release|Any CPU.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E88DEFEC-38F7-4977-8B53-8EB91D6FE8AC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+.warning-icon__icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warning-icon__icon--small {
+  font-size: 20px;
+}
+
+.warning-icon__icon--medium {
+  font-size: 30px;
+}
+
+.warning-icon__icon--large {
+  font-size: 40px;
+}
+
+.warning-icon__icon--warning {
+  color: #eea240;
+}
+
+.warning-icon__icon--error {
+  color: #c40000;
+}
+
+.warning-icon__icon--triangle {
+  position: relative;
+  top: -2px;
+}
+/*# sourceMappingURL=warning-icon.css.map */

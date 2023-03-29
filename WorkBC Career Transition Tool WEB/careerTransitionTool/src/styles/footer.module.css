@@ -1,0 +1,20 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+.footerFoot {
+  background-color: white;
+  color: #234075;
+}
+
+.footerFoot a {
+  color: #234075;
+}
+
+.footerFoot div:last-of-type {
+  margin-top: 1rem;
+}
+
+.BCLogo {
+  height: 50px;
+}
+/*# sourceMappingURL=footer.module.css.map */

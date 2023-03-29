@@ -1,0 +1,594 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+
+//Main Typography
+.mainContent .ant-typography {
+  color: white;
+  overflow-wrap: normal;
+}
+
+.mainContent {
+  .ant-typography{
+    margin-bottom: 0.875rem;
+  }
+  h1{
+    &.ant-typography{
+      font-size: 1.5rem;
+      @include respond-to('tablet'){ 
+        font-size: 1.875rem;
+      }
+    }
+  }
+  h2{
+    &.ant-typography{
+      font-size: 1.0rem;
+      margin-bottom: 1.0rem;
+    }
+  }
+  h3{
+    &.ant-typography{
+      font-size: 1.125rem;
+    }
+  }
+  .lead{
+    font-size: 1.175rem;
+  }
+  label{
+    font-size: 1.0rem;
+    &.strong{
+      font-family: $font-family-bold;
+      font-size: 0.825rem;
+      @include respond-to('tablet'){ 
+        font-size: 1.0rem;
+      }
+      &.details{
+        font-size: 1.0rem;
+      }
+    }
+    &.large{
+      font-size: 1.175rem;
+    }
+  }  
+}
+
+
+.navbar{
+  padding: 0 $search-padding;
+  &-brand{
+    //height: 80px;
+    @include respond-to('tablet'){ 
+      @include flexbox();
+      @include align-items(center);
+      height: 125px
+    }
+    &__title{
+      color: $secondary;
+      font-size: 2.25rem;
+      letter-spacing: -0.3px;
+      font-weight: 700;
+      //text-transform: uppercase;
+      line-height: 40px;
+      margin: 0.5rem 0;
+      @include respond-to('tablet'){ 
+        padding-left: 5rem;
+        font-size: 3.75rem;
+        margin: 0.75rem 0;
+      }
+    }
+  }
+
+}
+.navbar-item.site-logo{  
+  margin: 0;
+  img{
+    width: 121px;
+    margin: 0;
+    @include respond-to('tablet'){ 
+      width: auto;
+      height: 48px;
+    }
+  }
+} 
+
+
+.footer {
+  //border-top: $container-border;
+  padding: 2rem $search-padding 4rem;
+  background-color: white;
+  font-family: $font-family-base;
+  div.linksParent {
+    padding-left: 0;
+  }
+  
+}
+
+//Footer
+.footercontent {
+  max-width: 1280px;
+  color: $primary;
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  @include respond-to('footer'){ 
+    @include flex-direction(row);
+    @include align-items(flex-start);
+  }
+  a {
+    color: $primary;
+    padding-right: 5px;
+    font-size: 0.875rem;
+    font-family: $font-family-base;
+    text-shadow: 0 0 0 white;
+    &:not(:first-child) {
+      padding-left: 5px;
+    }
+    &:hover {
+      color:$tertiary;
+    }
+  }
+  &__links{
+    order:3;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include respond-to('footer'){ 
+      order:1;
+      margin-right: auto;
+      display:block;
+      @include flex(1 1)
+    }
+
+  }
+  &__social-icons{
+    order:2;
+    margin-bottom: 10px;
+    z-index: 10;
+    @include respond-to('footer'){
+      order:3;
+      @include flex(0 0 100%);
+      margin-top: -20px;
+      margin-bottom: 0;
+    }
+  }
+  &__google-translate{
+    order:1;
+    margin-bottom: 10px;
+    min-height: 67px;
+    @include respond-to('footer'){
+      margin:0;
+      order:2;
+    }
+  }
+
+}
+
+.footerIcon {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentcolor;
+  line-height: 20px;
+  
+  &:hover{
+    border-radius: 50px;
+    @include box-shadow-mix(0, 1px, 4px, rgba(0, 0, 0, 0.4), false);
+    transform: scale(1.2);
+  }
+  
+  
+}
+
+br{
+  &.desktop-br{
+    display: none; 
+    @include respond-to('tablet'){ 
+      display: block;
+    }
+  }
+}
+
+
+
+//Search Side Bar
+.sideBar{
+  &__top{
+    margin-bottom: 2.25rem;
+  }
+  &__bottom{
+    
+  }
+}
+
+.titleText {
+  font-size: 18px;
+  line-height: 24px;
+  @include respond-to('tablet'){ 
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+.smallTitleText {
+  font-size: 14px;
+  line-height: 22px;
+  @include respond-to('tablet'){ 
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.foundCareerBox {
+  .titleText:hover {
+    text-decoration: underline;
+  }
+}
+
+.labelText {
+  font-size: 14px;
+  line-height: 18px;
+  @include respond-to('tablet'){ 
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.labelSmallText {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 20px;
+  @include respond-to('tablet'){
+    font-size: 11px;
+    line-height: 25px;
+  }
+}
+
+.smallText {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.search-divider{
+  margin-top: 3.125rem;
+}
+
+//Search input field
+.search-input{
+  &.ant-select.ant-select-single{
+    margin-top: 5px;
+    .ant-select-selector{
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.filter-select{
+  &.ant-select.ant-select-sm{
+    > .ant-select-selector{
+      border-radius: 5px;
+      @include box-shadow-mix(0, 1px, 4px, rgba(0, 0, 0, 0.4), false);
+    }
+  }
+  .ant-select-arrow{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid $secondary;
+    right: 6px;
+    top: 60%;
+    color: transparent;
+    width: 6px;
+    height: 6px;
+    >img{
+      display: none;
+    }
+  }
+  
+}
+
+// Select
+/*
+.mainContent .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  border-radius: 8px;
+}*/
+
+// Layout
+.mainContent {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  //background-color: $main-content-container;
+  // justify-content: space-between;
+  // align-items: center;
+  // margin: auto;
+  width: 100%;
+  border-top: $container-border;
+  border-bottom: $container-border;
+  //transition: width .5s ease;
+  transition: width .4s ease;
+  @include respond-to('tablet'){ 
+    border-top: 0;
+    border-bottom: 0;
+    min-height: calc(100vh - (125px + 188px)); // header(125)  + footer(188) 
+  }
+}
+
+@media (max-width: 767px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.close{
+  margin-right:16px; 
+}
+.close-button{
+	cursor: pointer;
+	width: 15px;
+  height: 15px;
+  display: none;
+  margin-right: -16px;
+  @include respond-to('tablet'){ 
+    display: block;
+  }
+	&__svg{
+		fill: #fcc43b;
+  }
+  &--third{
+    margin-left: 16px;
+    // padding-left:16px;
+  }
+}
+
+.filter-button{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  &__circle{
+    fill: $secondary;
+  }
+  &__arrow{
+    fill: white;
+  }
+  &__text{
+    font-family: $font-family-bold;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+}
+
+.mobile-navigation{
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  z-index: 10;
+  @include flexbox();
+  @include justify-content(space-between);
+  @include align-items(center);
+  color: $secondary;
+  border-top: 3px solid #fcc43b;
+  border-bottom: 3px solid #fcc43b;
+  &__text{
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  @include respond-to('tablet'){ 
+    display: none;
+  }
+}
+
+.mobile-navigation:hover {
+  cursor: pointer;
+}
+
+
+$border-width: 10px;
+$border-top-width: 20px;
+.search-popover{
+  &.ant-popover{}
+  .ant-popover{
+    &-content, &-inner-content{
+      color: $secondary;
+    }
+    &-arrow{
+      display: none;
+    }
+    &-inner{
+      &::before,
+      &::after{
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        right:15px;
+        bottom: -12px;
+        border-left: $border-width solid transparent;
+        border-right: $border-width solid transparent;
+        border-top: $border-top-width solid #fcc43b;
+        border-bottom: none;
+        transform: rotate(0deg);
+      }
+      &::before{        
+        transform: scale(1.25);
+      }
+      &::after{
+        bottom: -5px;
+        border-left: $border-width solid transparent;
+        border-right: $border-width solid transparent;
+        border-top: $border-top-width solid white;
+      }
+      border-radius: 10px;
+      background-color: white;
+      border: 4px solid #fcc43b;
+      &-content{
+        border-radius: 8px;
+        
+      }
+
+    }
+  
+  }
+}
+
+.ant-select-dropdown{
+  @include respond-to('tablet'){ 
+    width: 400px !important;
+  }
+  
+}
+
+
+
+@media print {
+  .mainContent{
+    border-top: $container-border;
+    border-bottom: $container-border;
+  }
+  .mainContent, .sideBar, .detailBox, .imageWrapper{
+    display: block !important;
+    
+  }
+  .imageWrapper__overlay--full{
+    opacity: 0 !important;
+  }
+  .imageWrapper__cta, .imageWrapper__flex-border{
+    display: none !important;
+  }
+  .imageWrapper, .mainBox, .detailBox{
+    border:none !important;
+  }
+  .detailBox{
+    width: 100% !important;
+    .titleText{
+      color: black !important;
+      font-family: $font-family-bold;
+    }
+  }
+  .scrollListBox{
+    overflow: visible !important;
+  }
+  //resets
+  html, body, .mainContent .ant-typography, 
+  div.searchResultBox .ant-table-row, .mainContent label.large,
+  .detailBox {
+    color: black !important;
+    border-color: black !important;
+  }
+  .ant-table-tbody > tr > td, .searchResultBox{
+    border-color: #ccc !important;
+  }
+  .sideBar, .mainBox, div.searchResultBox .ant-table-row,
+  div.searchResultBox .rowSelected, .foundCareerBox,
+  .detailBox{ 
+    background-color: white !important;
+  }
+  .searchResultBox, .imageWrapper, .sideBar{
+    border: 0 !important;
+  }
+  tbody tr:first-child .ant-table-cell{
+    border-top: 1px solid #ccc !important;
+    border-color: #ccc !important;
+  }
+  header, footer, .mobile-navigation,
+  .sideBar .ant-btn.icon-btn, 
+  .filterOptions__button, .close-button, .search-nav-button, 
+  .back-to-top{
+    display:none !important;
+  }
+  .mainContent{
+    width: auto !important;
+  }
+
+  
+  .searchOptionBox{
+
+    .ant-select-selector{
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+    .ant-select-arrow{
+      border-top: 6px solid gray !important;
+    }
+  }
+  .foundCareerBox {
+    padding: 0 !important;
+  }
+
+
+  .scrollListBox{
+    height: auto !important;
+  }
+  .mainContent, .imageWrapper{
+    @include flex-direction(column);
+    @include flex-wrap(wrap);
+  }
+  .sideBar, .mainBox, .detailBox{
+    width: 100% !important;
+    max-width: 100% !important;
+    @include flex(0 0 100%);
+    @include flex-wrap(wrap);
+  }
+  .detailBox {
+    img, button{
+      display: none;
+    }
+  }
+
+  //]custom looks
+  .sideBar{
+    padding-bottom: 1.0rem !important;
+    &__bottom{
+      padding-bottom: 2rem;
+      border-bottom: 3px dotted #ccc !important;
+    }
+  }
+  .ant-typography {
+    br{
+      display: none;
+    }
+  }
+  h1.ant-typography {
+    font-size: 1.5rem !important;
+  }
+  .resultTitleBox{
+    padding-top: 2rem !important;
+  }
+  .searchOptionBox{
+    padding-bottom: 1rem;
+  }
+
+  .searchResultBox{
+    border-bottom: 3px dotted #ccc !important;
+    padding-bottom: 1.5rem;
+  }
+}
+

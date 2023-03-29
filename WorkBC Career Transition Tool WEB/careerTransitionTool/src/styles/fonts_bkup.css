@@ -1,0 +1,43 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../fonts/MyriadRegular.ttf");
+}
+
+@font-face {
+  font-family: "Myriad SemiBold";
+  src: url("../fonts/MyriadPro-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Myriad Bold";
+  src: url("../fonts/MyriadPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Myriad Semi";
+  src: url("../fonts/MyriadPro-BlackSemiCn.otf");
+}
+
+@font-face {
+  font-family: "Myriad Bold Semi";
+  src: url("../fonts/MyriadPro-BoldSemiExtended.ttf");
+}
+
+@font-face {
+  font-family: "MyriadRegular";
+  src: url("../fonts/MyriadPro-RegularNU.otf");
+}
+
+@font-face {
+  font-family: "MyriadBoldSemi";
+  src: url("../fonts/MyriadPro-SemiBoldNu.otf");
+}
+/*# sourceMappingURL=fonts_bkup.css.map */

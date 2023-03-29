@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="navbar headerBanner"
+  >
+    <div
+      className="navbar-brand navLeft"
+    >
+      <div
+        className="navbar-item logoParent"
+      >
+        <a
+          href="/"
+          style={
+            Object {
+              "color": "white",
+              "textDecoration": "none",
+            }
+          }
+        >
+          <img
+            alt="Work BC"
+            className="logo"
+            src={
+              Object {
+                "WorkBCLogo": "/source/images/gatsby-icon.png",
+              }
+            }
+          />
+        </a>
+      </div>
+      <button
+        aria-expanded="false"
+        aria-label="menu"
+        className="navbar-burger false"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        />
+        <span
+          aria-hidden="true"
+        />
+        <span
+          aria-hidden="true"
+        />
+      </button>
+    </div>
+    <div
+      className="navbar-menu false"
+    >
+      <div
+        className="navbar-start navItemParent"
+      >
+        <a
+          className="navbar-item linksListItem"
+          href="https://workbc.ca/About-Us.aspx"
+        >
+          About Us
+          <span
+            aria-hidden="true"
+            className="separator is-hidden-touch"
+          />
+        </a>
+        <a
+          className="navbar-item linksListItem"
+          href="https://workbc.ca/Employment-Services/WorkBC-Centres.aspx"
+        >
+          Find a WorkBC Centre
+          <span
+            aria-hidden="true"
+            className="separator is-hidden-touch"
+          />
+        </a>
+        <a
+          className="navbar-item linksListItem"
+          href="https://workbc.ca/Employment-Services/WorkBC-Publications.aspx"
+        >
+          Publications
+          <span
+            aria-hidden="true"
+            className="separator is-hidden-touch"
+          />
+        </a>
+        <a
+          className="navbar-item linksListItem"
+          href="https://workbc.ca/Login.aspx"
+        >
+          <b>
+            Login
+          </b>
+          <span
+            aria-hidden="true"
+            className="separator is-hidden-touch"
+          />
+        </a>
+        <a
+          className="navbar-item linksListItem"
+          href="https://workbc.ca/Register.aspx"
+        >
+          <b>
+            Register
+          </b>
+        </a>
+        <div
+          className="navbar-item inputParent"
+        >
+          <input
+            className="search__input  siteSearch"
+            id="header-search"
+            name="site-search-input"
+            onChange={[Function]}
+            onKeyUp={[Function]}
+            placeholder="Search"
+            type="search"
+          />
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="headerNav is-hidden-touch"
+  >
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Jobs-Careers.aspx"
+    >
+      Jobs & Careers
+    </a>
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Employment-Services.aspx"
+    >
+      Employment Services
+    </a>
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Training-Education.aspx"
+    >
+      Training & Education
+    </a>
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Labour-Market-Information.aspx"
+    >
+      Labour Market & Industry
+    </a>
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Employer-Resources.aspx"
+    >
+      Employer Resources
+    </a>
+    <a
+      className="navItem"
+      href="https://www.workbc.ca/Resources-for.aspx"
+    >
+      Resources For
+    </a>
+  </div>
+</header>
+`;

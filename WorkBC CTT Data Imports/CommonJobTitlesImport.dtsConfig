@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GROUPINFRA\johan.lotz" GeneratedFromPackageName="EducationLevelsImportJob" GeneratedFromPackageID="{174DD2C0-232E-4159-8BCA-0B5C0BDEC7A5}" GeneratedDate="2/17/2021 2:30:08 PM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[CTT_OLE_Database].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>WorkBC_CTT_DEV</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[CTT_OLE_Database].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>theoden</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[WorkBCEnterprise_OLE_Database].Properties[InitialCatalog]" ValueType="String">
+    <ConfiguredValue>LMO20192029_WorkBCEnterprise</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[WorkBCEnterprise_OLE_Database].Properties[ServerName]" ValueType="String">
+    <ConfiguredValue>theoden</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

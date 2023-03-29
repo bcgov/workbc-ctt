@@ -1,0 +1,78 @@
+//Font declaration
+$font-size-base:                		1.0rem; 
+$font-family-base:						"BC-Sans-Regular", Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                                        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-family-italic:					"BC-Sans-Italic",  Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                                        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-family-bold:            		    "BC-Sans-Bold",  Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                                        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-family-bold-italic:            	"BC-Sans-Bold-Italic",  Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                                        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+$breakpoints: (
+    'tablet':  ( min-width:  1024px ),
+    'desktop': ( min-width:  1280px ),
+    'footer': ( min-width:  1160px ),
+) !default;
+
+//General Icons
+$bc-logo:			    "../svg/bc-logo.svg";
+$blue-info:			    "../svg/blue-info-icon.svg";
+$filter-down:		    "../svg/filter-by-down-button.svg";
+$filter-up:			    "../svg/filter-by-up-button.svg";
+$find-career-button:	"../svg/find-career-options-button.svg";
+$view-career-button:	"../svg/view-career-profile-button.svg";
+
+//Social Icons
+$social-icon-facebook:			"../svg/facebook.svg";
+$social-icon-linkedin:			"../svg/linkedin.svg";
+$social-icon-twitter:			"../svg/twitter.svg";
+$social-icon-youtube:			"../svg/youtube.svg";
+
+//Main Colours
+$primary:       #5bc2e7;
+$secondary:     #009cde;
+$tertiary:     #002855;
+$accent:        #e3a82b;
+$yellow-border: rgba(252, 196, 59, 1);
+
+
+$search-padding: 1.875rem;
+$border-radius: 10px;
+
+$mobile-padding: 0.5rem;
+
+//Colours
+$main-content-container: #e9ebf0;
+$sidebar-container: #7ccfeb;
+$main-box-container: $secondary;
+$detail-box-container: #234075;
+$found-career-bg: #5bc2e7;
+
+$BC-blue: #234075;
+$container-border: solid 10px $yellow-border;
+$btn-border: solid 3px #e3a82b;
+$btn-color: #5bc2e7;
+$detail-btn-color: #234075;
+
+$link-list-item: #234075;
+$link-list-item-hover: #234075bf;
+$input-parent-text-color: #757763;
+$header-bg: white;
+$light-text: white;
+$nav-hover-bg: #e3a82b;
+
+//Font Size
+$root-font-size:				1.0rem; 
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base:                		1.0rem; //This sets the body as 18px font size
+
+//Mobile Heading Sizes, Margins, Lineheight
+$h1-font-size: $root-font-size * 1.5; //24
+$h1-font-size-mobile: $root-font-size * 1.875; //24
+$h2-font-size: $root-font-size * 1.0; //24
+$h2-font-size-mobile: $root-font-size * 1.0; //24

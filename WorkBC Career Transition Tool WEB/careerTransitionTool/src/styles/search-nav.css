@@ -1,0 +1,124 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+.sideBar {
+  background-color: #5bc2e7;
+  color: white;
+  padding: 1.875rem;
+  width: 340px;
+}
+
+@media (min-width: 1024px) {
+  .sideBar {
+    border-top: solid 10px #fcc43b;
+    border-bottom: solid 10px #fcc43b;
+  }
+}
+
+.sideBar .ant-btn.icon-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-pack: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 3px #e3a82b;
+  border-radius: 10px;
+  height: 50px !important;
+  font-size: 14px;
+  font-family: "BC-Sans-Bold", Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #009cde;
+}
+
+.sideBar .ant-btn.icon-btn:hover {
+  color: #002855;
+}
+
+.sideBar .search-btn .anticon.anticon-forward {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-pack: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html.translated-ltr .sideBar .ant-btn.icon-btn {
+  white-space: normal;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+html.translated-ltr .sideBar .search-btn .anticon.anticon-forward {
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.selectToolTip {
+  padding-top: 10px;
+  width: 200px;
+}
+
+.sideBar .ant-select {
+  max-width: 100% !important;
+}
+
+.sideBar .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 40px;
+}
+
+.sideBar .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+  padding-top: 4px;
+}
+
+.sideBar .ant-select-single .ant-select-selector .ant-select-selection-item,
+.sideBar .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  padding-top: 4px;
+}
+
+.sideBar .ant-select-single .ant-select-selector .ant-select-selection-item div span {
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  .sideBar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sideBar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sideBar {
+    width: 340px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sideBar {
+    width: 340px;
+  }
+}
+/*# sourceMappingURL=search-nav.css.map */

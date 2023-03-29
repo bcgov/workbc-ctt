@@ -1,0 +1,224 @@
+/* SCSS */
+/* SCSS */
+/* SCSS */
+.mainBox {
+  z-index: 10;
+}
+
+.mainBox .ant-btn {
+  border: solid 3px #e3a82b;
+  border-radius: 10px;
+  height: 40px !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #5bc2e7;
+}
+
+.back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .back-to-top {
+    display: none;
+  }
+}
+
+.back-to-top__button.ant-btn {
+  font-family: "BC-Sans-Bold", Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 0.875rem;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.back-to-top__button.ant-btn:hover {
+  background-color: white;
+  color: #009cde;
+}
+
+div.searchResultBox .ant-table-body {
+  background-color: #009cde;
+}
+
+div.searchResultBox .ant-table-row {
+  background-color: #009cde;
+  color: white;
+}
+
+div.searchResultBox .ant-table-empty {
+  background-color: #009cde;
+}
+
+div.searchResultBox .ant-table-empty .ant-table-cell {
+  color: #ffffff;
+}
+
+div.searchResultBox .ant-table-row .ant-table-cell {
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  div.searchResultBox .ant-table-row .ant-table-cell {
+    padding: 16px;
+  }
+}
+
+div.searchResultBox tr:hover,
+div.searchResultBox td:hover,
+.ant-table-tbody > .rowSelected:hover > td {
+  background-color: #7ccfeb !important;
+  font-weight: bold;
+  color: white;
+}
+
+div.searchResultBox .rowSelected {
+  color: white;
+  background-color: #7ccfeb !important;
+  font-weight: bold;
+}
+
+@media print {
+  div.searchResultBox .rowSelected {
+    background-color: transparent !important;
+  }
+}
+
+.mainBox {
+  background-color: #009cde;
+  color: white;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  min-width: 530px;
+  max-width: 785px;
+  width: calc(100vw - 760px);
+}
+
+@media (min-width: 1024px) {
+  .mainBox {
+    padding: 1rem 1.5rem 2.0rem 1.5rem;
+    border-top: solid 10px #fcc43b;
+    border-bottom: solid 10px #fcc43b;
+  }
+}
+
+.resultTitleBox {
+  padding-top: 15px;
+  width: 100%;
+}
+
+.searchOptionBox {
+  margin-top: 10px;
+  padding-left: 2px;
+  width: 100%;
+}
+
+.searchOptionBox .ant-col.ant-col-5 {
+  white-space: break-spaces;
+  word-wrap: none;
+}
+
+.searchResultBox {
+  margin-top: 15px;
+  width: 100%;
+  border-top: solid 4px white;
+  border-bottom: solid 4px white;
+}
+
+.scrollListBox {
+  overflow-y: auto;
+}
+
+.totalNumber {
+  color: #fcc43b;
+}
+
+@media (max-width: 767px) {
+  .mainBox {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainBox {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainBox {
+    min-width: 530px;
+    max-width: 785px;
+    width: calc(100vw - 760px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainBox {
+    min-width: 530px;
+    max-width: 785px;
+    width: calc(100vw - 760px);
+  }
+}
+
+.foundCareerBox {
+  background-color: #5bc2e7;
+  margin-top: 8px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 15px;
+  border: dotted 2px white;
+}
+
+.foundCareerBox__title {
+  margin-bottom: 20px;
+}
+
+.foundCareerBox__row {
+  margin-top: 5px;
+}
+
+.filterOptions {
+  margin-top: 1.25rem;
+}
+
+.filterOptions__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterOptions__summary {
+  margin-left: 2rem;
+}
+
+.filterOptions__button > button.ant-btn {
+  color: #009cde;
+  font-size: 12px;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=search-results-box.css.map */

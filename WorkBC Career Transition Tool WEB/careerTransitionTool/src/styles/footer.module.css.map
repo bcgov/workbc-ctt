@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AE2LA,UAAU;AAST,UAAU;AAYV,UAAU;AFlMX,AAAA,WAAW,CAAC;EACV,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAbG,OAAO;CAoBhB;;AATD,AAGE,WAHS,CAGT,CAAC,CAAC;EACA,KAAK,EAfC,OAAO;CAgBd;;AALH,AAME,WANS,CAMT,GAAG,AAAA,aAAa,CAAC;EACf,UAAU,EAAE,IAAI;CACjB;;AAGH,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "footer.module.scss",
+        "variables.scss",
+        "mixins.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "footer.module.css"
+}

@@ -1,0 +1,62 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+$input-parent-text-color: #757763;
+
+.inputParent {
+  position: relative;
+  margin-left: 16px;
+  color: $input-parent-text-color;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: #5bc2e7;
+  input {
+    flex-grow: 1;
+    padding-left: 2px;
+  }
+  input.videoSearch {
+    height: 2.25em;
+    border-style: unset;
+    padding-left: 10px;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .searchIcon {
+    top: 20px;
+  }  
+}
+
+.videoSearch.hasContent + .searchLabel, .siteSearch.hasContent + .searchLabel {
+  display: none;
+}
+
+.videoSearch + .searchLabel {
+  left: 10px;
+}
+
+.backToTop {
+  width: 40px;
+  height: 40px;
+  margin: 1.5rem;
+  margin-left: calc(100% - 70px);
+  background:
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkJhY2tfdG9fdG9wX0JUTl9jb3B5XzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCgkgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyAgICA7fQoJLnN0MXtmaWxsOiM1OEMxRTk7fQoJLnN0MntmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJ6Ii8+CjxnPgoJPHBhdGggaWQ9IlNoYXBlXzVfY29weV8zIiBjbGFzcz0ic3QxIiBkPSJNMS4yLDI0QzEuMiwxMS40LDExLjQsMS4yLDI0LDEuMmMxMi42LDAsMjIuOCwxMC4yLDIyLjgsMjIuOVMzNi42LDQ2LjgsMjQsNDYuOAoJCUMxMS40LDQ2LjgsMS4yLDM2LjYsMS4yLDI0eiIvPgoJPHBhdGggY2xhc3M9InN0MiIgZD0iTTEzLjEsMTYuOGgyMS4xdjRIMTMuMUwxMy4xLDE2LjhMMTMuMSwxNi44eiIvPgoJPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIyNi41LDIzLjYgMjQuMiwyMS40IDIzLjcsMjAuOCAxNC42LDI5LjkgMTQuNiwyOS45IDE3LjQsMzIuNyAyMy43LDI2LjUgMjkuOSwzMi43IDI5LjksMzIuNyAKCQkzMi43LDI5LjkgCSIvPgo8L2c+Cjwvc3ZnPgo=)
+    no-repeat
+    left center;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+}

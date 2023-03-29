@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player renders with class modal "is-active" on show 1`] = `
+<div
+  className="modal is-active"
+>
+  <div
+    className="modal-background"
+  />
+  <div
+    className="modal-content iframeParent"
+  >
+    <div
+      className="iframeParentDiv"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "",
+        }
+      }
+    />
+  </div>
+  <button
+    aria-label="close"
+    className="modal-close is-large"
+    onClick={[Function]}
+    type="button"
+  />
+</div>
+`;
+
+exports[`Player renders without class "is-active" when show is false 1`] = `
+<div
+  className="modal"
+>
+  <div
+    className="modal-background"
+  />
+  <div
+    className="modal-content iframeParent"
+  >
+    <div
+      className="iframeParentDiv"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "",
+        }
+      }
+    />
+  </div>
+  <button
+    aria-label="close"
+    className="modal-close is-large"
+    onClick={[Function]}
+    type="button"
+  />
+</div>
+`;
