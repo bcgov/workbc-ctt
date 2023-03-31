@@ -21,7 +21,7 @@ jobs:
 #      with:
 #        dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore **/*.csproj
+      run: dotnet restore "E:\action-runner\ctt\_work\workbc-ctt\workbc-ctt\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
     - name: Build
       run: dotnet build --no-restore
     - name: Test
