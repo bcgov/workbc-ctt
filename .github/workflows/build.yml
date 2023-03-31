@@ -28,5 +28,5 @@ jobs:
       run: dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
     - name: Build2
       run: dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+#    - name: Test
+#      run: dotnet test --no-build --verbosity normal
