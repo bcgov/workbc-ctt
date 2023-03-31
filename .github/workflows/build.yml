@@ -22,6 +22,8 @@ jobs:
 #        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
+    - name: Restore dependecies2
+      run: dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
     - name: Build
       run: dotnet build --no-restore
     - name: Test
