@@ -32,3 +32,10 @@ jobs:
 #      run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish "WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj" -o ./Publish -c Release --no-self-contained
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '12.16.1'
+    - run: npm install
+    - run: npm run build --if-present
+    - run: npm test
