@@ -22,14 +22,23 @@ jobs:
       with:
         ref: ${{ github.event.workflow_run.head_branch }}
 
-    - name: Download artifacts
-      id: download-artifact
+    - name: Download artifacts - frontend
+#      id: download-artifact
       uses: dawidd6/action-download-artifact@v2
       with:
         workflow: build.yml
         workflow_conclusion: success
         branch: master
-        name: Website
-        path: downloads
+        name: web
+        path: downloads/web
+    - name: Download artifacts - backend
+#      id: download-artifact
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        workflow: build.yml
+        workflow_conclusion: success
+        branch: master
+        name: api
+        path: downloads/api
     - name: Display structure of downloaded files
       run: ls -R
