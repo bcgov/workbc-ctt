@@ -43,5 +43,5 @@ jobs:
     - name: Display structure of downloaded files
       run: ls -R
     - name: Script
-      run: ./Deploy.ps1
-      shell: pwsh
+      run: |
+        .\Deploy.ps1
