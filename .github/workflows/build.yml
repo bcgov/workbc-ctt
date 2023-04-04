@@ -21,9 +21,9 @@ jobs:
 #      with:
 #        dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
-    - name: Restore dependecies2
-      run: dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
+      run: |
+        dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
+        dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
     - name: Build
       run: dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
     - name: Build2
@@ -41,4 +41,10 @@ jobs:
     - run: npm run build --if-present
       working-directory: "WorkBC Career Transition Tool WEB/careerTransitionTool"
 #    - run: npm test
-
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: website
+        path: |
+          Publish/
+          "WorkBC Career Transition Tool WEB/careerTransitionTool/public/"
