@@ -20,17 +20,17 @@ jobs:
 #      uses: actions/setup-dotnet@v3
 #      with:
 #        dotnet-version: 6.0.x
-    - name: Restore dependencies
+    - name: Restore dependencies .NET
       run: |
         dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
         dotnet restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
-    - name: Build
-      run: dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
-    - name: Build2
-      run: dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
-#    - name: Test
+    - name: Build .NET
+      run: |
+        dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API Tests\WorkBC Career Transition Tool API Tests.csproj"
+        dotnet build --no-restore "${{github.workspace}}\WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj"
+#    - name: Test .NET
 #      run: dotnet test --no-build --verbosity normal
-    - name: Publish
+    - name: Publish .NET
       run: dotnet publish "WorkBC Career Transition Tool API\WorkBC Career Transition Tool API.csproj" -o ./Publish -c Release --no-self-contained
     - name: Use Node.js
       uses: actions/setup-node@v3
@@ -44,7 +44,5 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: website
-        path: |
-          Publish/
-          "WorkBC Career Transition Tool WEB/careerTransitionTool/public/"
+        name: website2
+        path: "WorkBC Career Transition Tool WEB/careerTransitionTool/public/"
