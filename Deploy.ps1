@@ -1,1 +1,2 @@
-Write-Output "App Pool is running"
+$msg=$args[0]
+Write-Output $msg
