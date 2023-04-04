@@ -44,4 +44,4 @@ jobs:
       run: ls -R
     - name: Script
       run: |
-        .\Deploy.ps1
+        .\Deploy.ps1 ${{ secrets.WEB_POOL_NAME }}
