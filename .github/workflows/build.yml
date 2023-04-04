@@ -44,5 +44,6 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: website2
-        path: "WorkBC Career Transition Tool WEB/careerTransitionTool/public/"
+        name: website3
+        path: WorkBC Career Transition Tool WEB/careerTransitionTool/public/
+        
