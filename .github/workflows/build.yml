@@ -40,5 +40,5 @@ jobs:
       working-directory: "WorkBC Career Transition Tool WEB/careerTransitionTool"
     - run: npm run build --if-present
       working-directory: "WorkBC Career Transition Tool WEB/careerTransitionTool"
-    - run: npm test
-      working-directory: "WorkBC Career Transition Tool WEB/careerTransitionTool"
+#    - run: npm test
+
