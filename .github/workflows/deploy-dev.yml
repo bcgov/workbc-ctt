@@ -23,8 +23,13 @@ jobs:
         ref: ${{ github.event.workflow_run.head_branch }}
 
     - name: Download artifacts
-      uses: actions/download-artifact@v3
+      id: download-artifact
+      uses: dawidd6/action-download-artifact@v2
       with:
+        workflow: build.yml
+        workflow_conclusion: success
+        branch: master
         name: website
+        path: downloads
     - name: Display structure of downloaded files
       run: ls -R
