@@ -1,19 +1,24 @@
 $appPath = $args[0]
-$dbStr = $args[1]
-$filePath = $args[2]
-$siteUrl = $args[3]
+#$dbStr = $args[1]
+$filePath = $args[1]
+$siteUrl = $args[2]
+$dbServer = $args[3]
+$database = $args[4]
+$dbUser = $args[5]
+$dbPwd = $args[6]
 $pathToJson = $appPath + "\API\appsettings.json"
 
 
-$a = Get-Content $pathToJson | ConvertFrom-Json
-$a.ConnectionStrings.Database = $dbStr
-$a | ConvertTo-Json -depth 32| set-content $pathToJson
+$content = Get-Content $pathToJson | ConvertFrom-Json
+#$content.ConnectionStrings.Database = $dbStr
+$content.ConnectionStrings.Database = "Server=$dbServer;Database=$database;User Id=$dbUser;Password=$dbPwd"
+#$content | ConvertTo-Json -depth 32| set-content $pathToJson
 
 
-$a = Get-Content $pathToJson | ConvertFrom-Json
-$a.ImageCarouselNOCConfigLocalPath = $filePath + "\BusinessConfiguration\ImageCarouselNOCs.txt"
-$a.SharedImagesProfilesLocalPath= $filePath + "\ProfileImages"
-$a.SharedImagesBackgroundsLocalPath= $filePath + "\BackgroundImages"
-$a.SharedImagesProfilesBaseURL= $siteUrl + "/careertransitiontool/profileimages/"
-$a.SharedImagesBackgroundsBaseURL= $siteUrl + "/careertransitiontool/backgroundimages/"
-$a | ConvertTo-Json -depth 32| set-content $pathToJson
+#$content = Get-Content $pathToJson | ConvertFrom-Json
+$content.ImageCarouselNOCConfigLocalPath = $filePath + "\BusinessConfiguration\ImageCarouselNOCs.txt"
+$content.SharedImagesProfilesLocalPath= $filePath + "\ProfileImages"
+$content.SharedImagesBackgroundsLocalPath= $filePath + "\BackgroundImages"
+$content.SharedImagesProfilesBaseURL= $siteUrl + "/careertransitiontool/profileimages/"
+$content.SharedImagesBackgroundsBaseURL= $siteUrl + "/careertransitiontool/backgroundimages/"
+$content | ConvertTo-Json -depth 32| set-content $pathToJson
