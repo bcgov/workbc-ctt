@@ -1,7 +1,7 @@
 $appPath = $args[0]
-$dbStr = $arg[1]
-$filePath = $arg[2]
-$siteUrl = $arg[3]
+$dbStr = $args[1]
+$filePath = $args[2]
+$siteUrl = $args[3]
 $pathToJson = $appPath + "\API\appsettings.json"
 
 
