@@ -45,3 +45,4 @@ jobs:
     - name: Script
       run: |
         powershell/StopAppPools.ps1 ${{ secrets.API_POOL_NAME }} ${{ secrets.WEB_POOL_NAME }}
+        powershell/StartAppPools.ps1
