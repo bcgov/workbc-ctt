@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: deploy DEV
+name: Deploy DEV
 
 on:
   workflow_run:
@@ -23,7 +23,6 @@ jobs:
         ref: ${{ github.event.workflow_run.head_branch }}
 
     - name: Download artifacts - frontend
-#      id: download-artifact
       uses: dawidd6/action-download-artifact@v2
       with:
         workflow: build.yml
@@ -32,7 +31,6 @@ jobs:
         name: web
         path: downloads/web
     - name: Download artifacts - backend
-#      id: download-artifact
       uses: dawidd6/action-download-artifact@v2
       with:
         workflow: build.yml
@@ -45,4 +43,4 @@ jobs:
     - name: Script
       run: |
         powershell/StopAppPools.ps1 ${{ secrets.API_POOL_NAME }} ${{ secrets.WEB_POOL_NAME }}
-        powershell/StartAppPools.ps1
+        powershell/StartAppPools.ps1 ${{ secrets.API_POOL_NAME }} ${{ secrets.WEB_POOL_NAME }}
