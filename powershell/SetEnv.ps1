@@ -1,5 +1,4 @@
 $appPath = $args[0]
-#$dbStr = $args[1]
 $filePath = $args[1]
 $siteUrl = $args[2]
 $dbServer = $args[3]
@@ -10,12 +9,8 @@ $pathToJson = $appPath + "\API\appsettings.json"
 
 
 $content = Get-Content $pathToJson | ConvertFrom-Json
-#$content.ConnectionStrings.Database = $dbStr
 $content.ConnectionStrings.Database = "Server=$dbServer;Database=$database;User Id=$dbUser;Password=$dbPwd"
-#$content | ConvertTo-Json -depth 32| set-content $pathToJson
 
-
-#$content = Get-Content $pathToJson | ConvertFrom-Json
 $content.ImageCarouselNOCConfigLocalPath = $filePath + "\BusinessConfiguration\ImageCarouselNOCs.txt"
 $content.SharedImagesProfilesLocalPath= $filePath + "\ProfileImages"
 $content.SharedImagesBackgroundsLocalPath= $filePath + "\BackgroundImages"
