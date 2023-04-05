@@ -1,2 +1,8 @@
 $msg=$args[0]
-Write-Output $msg
+if ($msg -eq "WorkBC.CareerTransitionTool") {
+
+Write-Output "Yes"
+} else {
+Write-Output "No"
+}
+
