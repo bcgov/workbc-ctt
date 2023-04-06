@@ -1,0 +1,35 @@
+name: Tag
+
+on:
+  push:
+    tags: ["*"]
+
+jobs:
+  main:
+    name: main
+    runs-on: ctt-cd-test
+
+    steps:
+    - name: check out repo
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.workflow_run.head_branch }}
+
+    - name: Download artifacts - frontend
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        workflow: build.yml
+        workflow_conclusion: success
+        branch: master
+        name: web
+        path: downloads/web
+    - name: Download artifacts - backend
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        workflow: build.yml
+        workflow_conclusion: success
+        branch: master
+        name: api
+        path: downloads/api
+    - name: Display structure of downloaded files
+      run: ls -R
