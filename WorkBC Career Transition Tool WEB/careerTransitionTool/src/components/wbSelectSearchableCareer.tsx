@@ -20,7 +20,7 @@ interface OwnProps {
     style?: React.CSSProperties | undefined
     warningText?: string
 }
-  
+
 type Props = OwnProps & WbSelectProps
 
 const { Option } = Select
@@ -95,7 +95,7 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     useEffect(() => {
         if (isValidating) return
-        
+
         if (!skills) {
             setValidationMessage('No results found')
             setOptions([])
@@ -129,7 +129,7 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     useEffect(() => {
         if(!!searchText && searchText.length >= getAutoCompleteMinimumLength(searchText)) { // options get generated when searchText is at least of minimum characters
-            const matchedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) >= 0) 
+            const matchedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) >= 0)
             const relatedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) === -1)
             setMatchedOptions(matchedOptions)
             setRelatedOptions(relatedOptions)
@@ -223,7 +223,7 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     // function handleSelect(value: string, option: any) {
     //     console.log("on select: value = " + value + ", option = " + JSON.stringify(option))
-    // }  
+    // }
 
     return (
         <WbSelect
@@ -255,7 +255,7 @@ const SelectCareer: FunctionComponent<Props> = ({
             value={searchText?? undefined}
             virtual={false}
             dropdownRender={(menu) => (
-                <> 
+                <>
                 {menu}
                 </>
             )}
@@ -264,26 +264,6 @@ const SelectCareer: FunctionComponent<Props> = ({
                     (<Option key={option.key} value={option.value}>
                         <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
                     </Option>))}
-                {(matchedOptions?.length>0 || relatedOptions?.length>0) && (
-                    <Option className="divider" key="divider" value="divider" disabled>
-                        <span className="search-results-divider-content">
-                            {!!searchText && matchedOptions?.length === 0 && (
-                                <h5>No match found in titles</h5>
-                            )}
-                            <Divider className="search-results-divider"></Divider>
-                            {!!searchText && relatedOptions?.length === 0 && (
-                                <h5>No related items found</h5>
-                            )}
-                            {!!searchText && relatedOptions?.length > 0 && (
-                                <h6>Other related options</h6>
-                            )}
-                        </span>   
-                    </Option>            
-                )}
-                {!!searchText && relatedOptions?.map(option =>  
-                    <Option key={option.key} value={option.value}> 
-                        <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
-                    </Option>)}
         </WbSelect>
     )
 }
