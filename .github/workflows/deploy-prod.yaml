@@ -15,6 +15,7 @@ jobs:
     strategy:
       matrix:
         os: [ctt-cd-prod1, ctt-cd-prod2]
+    runs-on: ${{ matrix.os }}
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
