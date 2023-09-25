@@ -252,6 +252,22 @@
           transform: scale(1.2);
 }
 
+.footerIconSquare {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentcolor;
+    line-height: 20px;
+}
+
+.footerIconSquare:hover {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 br.desktop-br {
   display: none;
 }
