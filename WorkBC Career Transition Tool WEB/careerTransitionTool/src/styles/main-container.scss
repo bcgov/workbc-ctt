@@ -181,6 +181,20 @@
   
 }
 
+.footerIconSquare {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentcolor;
+    line-height: 20px;
+
+    &:hover {
+        @include box-shadow-mix(0, 1px, 4px, rgba(0, 0, 0, 0.4), false);
+        transform: scale(1.2);
+    }
+}
+
 br{
   &.desktop-br{
     display: none; 
