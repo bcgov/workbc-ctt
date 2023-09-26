@@ -153,11 +153,11 @@
 }
 
 .footercontent a {
-  color: #00090d;
-  padding-right: 5px;
-  font-size: 0.875rem;
-  font-family: "BC-Sans-Regular", Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  text-shadow: 0 0 0 white;
+    color: #5bc2e7;
+    padding-right: 5px;
+    font-size: 0.875rem;
+    font-family: "BC-Sans-Regular", Arial, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    text-shadow: 0 0 0 white;
 }
 
 .footercontent a:not(:first-child) {
@@ -165,7 +165,7 @@
 }
 
     .footercontent a:hover {
-        color: #00090d;
+        color: #002855;
     }
 
 .footercontent__links {
