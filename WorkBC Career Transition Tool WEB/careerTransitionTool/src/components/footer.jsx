@@ -15,7 +15,7 @@ function FooterIcons() {
 			</a>
 			{/* Facebook */}
 			<a href="https://www.facebook.com/WorkBC" target="_blank" rel="noreferrer">
-				<img className=".footerIconFacebook" src={FacebookLogo} alt="Facebook" />
+				<img className="footerIconFacebook" src={FacebookLogo} alt="Facebook" />
 			</a>
 			{/* Youtube */}
 			<a href="https://www.youtube.com/user/WorkBC" target="_blank" rel="noreferrer">
