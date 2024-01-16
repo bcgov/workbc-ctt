@@ -15,7 +15,7 @@
   h1{
     &.ant-typography{
       font-size: 1.5rem;
-      @include respond-to('tablet'){ 
+      @include respond-to('tablet'){
         font-size: 1.875rem;
       }
     }
@@ -39,7 +39,7 @@
     &.strong{
       font-family: $font-family-bold;
       font-size: 0.825rem;
-      @include respond-to('tablet'){ 
+      @include respond-to('tablet'){
         font-size: 1.0rem;
       }
       &.details{
@@ -49,7 +49,7 @@
     &.large{
       font-size: 1.175rem;
     }
-  }  
+  }
 }
 
 
@@ -57,7 +57,7 @@
   padding: 0 $search-padding;
   &-brand{
     //height: 80px;
-    @include respond-to('tablet'){ 
+    @include respond-to('tablet'){
       @include flexbox();
       @include align-items(center);
       height: 125px
@@ -70,7 +70,7 @@
       //text-transform: uppercase;
       line-height: 40px;
       margin: 0.5rem 0;
-      @include respond-to('tablet'){ 
+      @include respond-to('tablet'){
         padding-left: 5rem;
         font-size: 3.75rem;
         margin: 0.75rem 0;
@@ -79,17 +79,17 @@
   }
 
 }
-.navbar-item.site-logo{  
+.navbar-item.site-logo{
   margin: 0;
   img{
     width: 121px;
     margin: 0;
-    @include respond-to('tablet'){ 
+    @include respond-to('tablet'){
       width: auto;
       height: 48px;
     }
   }
-} 
+}
 
 
 .footer {
@@ -100,7 +100,7 @@
   div.linksParent {
     padding-left: 0;
   }
-  
+
 }
 
 //Footer
@@ -111,7 +111,7 @@
   @include flex-direction(column);
   @include align-items(center);
   @include flex-wrap(wrap);
-  @include respond-to('footer'){ 
+  @include respond-to('footer'){
     @include flex-direction(row);
     @include align-items(flex-start);
   }
@@ -133,7 +133,7 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(center);
-    @include respond-to('footer'){ 
+    @include respond-to('footer'){
       order:1;
       margin-right: auto;
       display:block;
@@ -171,14 +171,14 @@
   vertical-align: middle;
   fill: currentcolor;
   line-height: 20px;
-  
+
   &:hover{
     border-radius: 50px;
     @include box-shadow-mix(0, 1px, 4px, rgba(0, 0, 0, 0.4), false);
     transform: scale(1.2);
   }
-  
-  
+
+
 }
 
 .footerIconFacebook {
@@ -202,7 +202,6 @@
     width: 35px;
     display: inline-block;
     vertical-align: middle;
-    fill: currentcolor;
     line-height: 20px;
 
     &:hover {
@@ -213,8 +212,8 @@
 
 br{
   &.desktop-br{
-    display: none; 
-    @include respond-to('tablet'){ 
+    display: none;
+    @include respond-to('tablet'){
       display: block;
     }
   }
@@ -228,14 +227,14 @@ br{
     margin-bottom: 2.25rem;
   }
   &__bottom{
-    
+
   }
 }
 
 .titleText {
   font-size: 18px;
   line-height: 24px;
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     font-size: 20px;
     line-height: 30px;
   }
@@ -245,7 +244,7 @@ br{
 .smallTitleText {
   font-size: 14px;
   line-height: 22px;
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     font-size: 16px;
     line-height: 28px;
   }
@@ -260,7 +259,7 @@ br{
 .labelText {
   font-size: 14px;
   line-height: 18px;
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     font-size: 16px;
     line-height: 20px;
   }
@@ -315,7 +314,7 @@ br{
       display: none;
     }
   }
-  
+
 }
 
 // Select
@@ -338,10 +337,10 @@ br{
   border-bottom: $container-border;
   //transition: width .5s ease;
   transition: width .4s ease;
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     border-top: 0;
     border-bottom: 0;
-    min-height: calc(100vh - (125px + 188px)); // header(125)  + footer(188) 
+    min-height: calc(100vh - (125px + 188px)); // header(125)  + footer(188)
   }
 }
 
@@ -375,7 +374,7 @@ br{
 
 
 .close{
-  margin-right:16px; 
+  margin-right:16px;
 }
 .close-button{
 	cursor: pointer;
@@ -383,7 +382,7 @@ br{
   height: 15px;
   display: none;
   margin-right: -16px;
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     display: block;
   }
 	&__svg{
@@ -431,7 +430,7 @@ br{
     text-transform: uppercase;
     font-size: 1rem;
   }
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     display: none;
   }
 }
@@ -467,7 +466,7 @@ $border-top-width: 20px;
         border-bottom: none;
         transform: rotate(0deg);
       }
-      &::before{        
+      &::before{
         transform: scale(1.25);
       }
       &::after{
@@ -481,19 +480,19 @@ $border-top-width: 20px;
       border: 4px solid #fcc43b;
       &-content{
         border-radius: 8px;
-        
+
       }
 
     }
-  
+
   }
 }
 
 .ant-select-dropdown{
-  @include respond-to('tablet'){ 
+  @include respond-to('tablet'){
     width: 400px !important;
   }
-  
+
 }
 
 
@@ -505,7 +504,7 @@ $border-top-width: 20px;
   }
   .mainContent, .sideBar, .detailBox, .imageWrapper{
     display: block !important;
-    
+
   }
   .imageWrapper__overlay--full{
     opacity: 0 !important;
@@ -527,7 +526,7 @@ $border-top-width: 20px;
     overflow: visible !important;
   }
   //resets
-  html, body, .mainContent .ant-typography, 
+  html, body, .mainContent .ant-typography,
   div.searchResultBox .ant-table-row, .mainContent label.large,
   .detailBox {
     color: black !important;
@@ -538,7 +537,7 @@ $border-top-width: 20px;
   }
   .sideBar, .mainBox, div.searchResultBox .ant-table-row,
   div.searchResultBox .rowSelected, .foundCareerBox,
-  .detailBox{ 
+  .detailBox{
     background-color: white !important;
   }
   .searchResultBox, .imageWrapper, .sideBar{
@@ -549,8 +548,8 @@ $border-top-width: 20px;
     border-color: #ccc !important;
   }
   header, footer, .mobile-navigation,
-  .sideBar .ant-btn.icon-btn, 
-  .filterOptions__button, .close-button, .search-nav-button, 
+  .sideBar .ant-btn.icon-btn,
+  .filterOptions__button, .close-button, .search-nav-button,
   .back-to-top{
     display:none !important;
   }
@@ -558,7 +557,7 @@ $border-top-width: 20px;
     width: auto !important;
   }
 
-  
+
   .searchOptionBox{
 
     .ant-select-selector{
