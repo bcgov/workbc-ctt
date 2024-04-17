@@ -39,7 +39,9 @@ jobs:
         name: api
         path: downloads/api
     - name: Display structure of downloaded files
-      run: ls -R
+      run: |
+        whoami
+        ls -R
     - name: Script
       run: |
         powershell/StopAppPools.ps1 ${{ secrets.API_POOL_NAME }} ${{ secrets.WEB_POOL_NAME }}
