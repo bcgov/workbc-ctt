@@ -19,7 +19,7 @@ const SearchResultsBox: FunctionComponent = () => {
     const { foundSkill, filteredCareerOptions, performFiltering, setMainBoxWidth,
         setSelectedSkillVisible, isFilterOptionExpanded, setFilterOption, setFilterOptionExpanded,
         searchPerformed, filterOption, selectedSkill, setSelectedSkill, reset } = useCareerSkillContext()
-        
+
     const [width] = useWindowSize()
     const [scrollHeight, setScrollHeight] = useState({ height: 420})
     const [isTableVisible, setIsTableVisible] = useState(true)
@@ -48,7 +48,7 @@ const SearchResultsBox: FunctionComponent = () => {
             SmoothScrolling.scrollTo('html')
         }
         setIsTableVisible(true)
-      
+
     }, [filteredCareerOptions, selectedSkill])
 
     async function filter() {
@@ -74,7 +74,7 @@ const SearchResultsBox: FunctionComponent = () => {
             key: 'title',
         },
     ]
- 
+
 
     const scrollTop = () =>{
         SmoothScrolling.scrollTo('html')
@@ -90,7 +90,7 @@ const SearchResultsBox: FunctionComponent = () => {
         })
         return uniqueOptions
     }
-    
+
     function toggleSortOptions() {
         if (!isFilterOptionExpanded) {
             setScrollHeight({ height: 420 - 72})
@@ -171,19 +171,6 @@ const SearchResultsBox: FunctionComponent = () => {
         //console.log('Current Filter Option: ' + JSON.stringify(filterOption))
     }
 
-    function handleChangeWorkExperience(value: Key, options: any) {
-        try {
-            if (!!value && !!options && options.value) {
-                setFilterOption({id: value as number, value: options.value}, ReferenceType.workExperience)
-            } else {
-                setFilterOption(defaultFilterOption.workExperience, ReferenceType.workExperience)
-            }
-        } catch (error) {
-            console.log(error)
-        }
-        //console.log('Current Filter Option: ' + JSON.stringify(filterOption))
-    }
-
     function handleChangeEducation(value: Key, options: any) {
         try {
             if (!!value && !!options && options.value) {
@@ -247,43 +234,35 @@ const SearchResultsBox: FunctionComponent = () => {
                             <label className="strong">{foundSkill.education.value}</label>
                         </Col>
                     </WbRow>
-                    <WbRow className="foundCareerBox__row" style={{ justifyContent: "space-between", alignItems: "center" }}>
-                       <Col span={12}> 
-                            <Text className="labelText">Work experience:</Text>
-                        </Col>
-                        <Col style={{ textAlign: "right"}} span={12}>
-                            <label className="strong">{foundSkill.workExperience.value}</label>
-                        </Col>
-                    </WbRow>
                 </div>
                 <div className="resultTitleBox">
                     <WbRow>
-                        <Col span={24}> 
+                        <Col span={24}>
                             <Title level={3} style={{ fontWeight: 'bold'}}>Your search resulted in <b className="notranslate totalNumber">{getUniqueOptions(filteredCareerOptions).length}</b> similar career options.</Title>
                         </Col>
                     </WbRow>
                     <WbRow style={{ marginTop: -25}}>
-                        <Col span={24}> 
+                        <Col span={24}>
                             <Text>Select a career below to learn more. Use the Filter By button to modify your results.</Text>
                         </Col>
                     </WbRow>
-                    
+
                     <WbRow className="filterOptions">
                         <Col className="filterOptions__container">
                             <div className="filterOptions__button">
                                 <Button onClick={toggleSortOptions}>
                                     <div className="filter-button__text">FILTER BY </div>
-                                    {isFilterOptionExpanded? 
+                                    {isFilterOptionExpanded?
                                     <svg className="filter-button--up filter-button" viewBox="0 0 18 18">
                                         <circle className="filter-button__circle" cx="9" cy="9" r="9"/>
                                         <path className="filter-button__arrow" d="M14,12.5c-0.4,0-0.8-0.1-1.1-0.4L9,8.1l-3.9,3.9c-0.6,0.6-1.5,0.6-2.1,0s-0.6-1.5,0-2.1L9,3.9l6.1,6.1
-                                        c0.6,0.6,0.6,1.5,0,2.1C14.8,12.4,14.4,12.5,14,12.5z"/>                                   
+                                        c0.6,0.6,0.6,1.5,0,2.1C14.8,12.4,14.4,12.5,14,12.5z"/>
                                     </svg>
-                                    : 
+                                    :
                                     <svg className="filter-button--down filter-button" viewBox="0 0 18 18">
                                         <circle className="filter-button__circle" cx="9" cy="9" r="9"/>
                                         <path className="filter-button__arrow" d="M4,5.5c0.4,0,0.8,0.1,1.1,0.4L9,9.9l3.9-3.9c0.6-0.6,1.5-0.6,2.1,0s0.6,1.5,0,2.1L9,14.1L2.9,8.1
-                                        c-0.6-0.6-0.6-1.5,0-2.1C3.2,5.6,3.6,5.5,4,5.5z"/>                                   
+                                        c-0.6-0.6-0.6-1.5,0-2.1C3.2,5.6,3.6,5.5,4,5.5z"/>
                                     </svg>
                                     }
                                 </Button>
@@ -291,7 +270,7 @@ const SearchResultsBox: FunctionComponent = () => {
                         </Col>
                     </WbRow>
                 </div>
-                { !isMobile() && isFilterOptionExpanded && 
+                { !isMobile() && isFilterOptionExpanded &&
                 <div className="searchOptionBox">
                     <WbRow style={{ alignItems: "center" }}>
                         <Col span={5} style={{paddingRight: '1px'}}>
@@ -325,18 +304,10 @@ const SearchResultsBox: FunctionComponent = () => {
                             showArrow={true}
                             placeholder={"Level"} style={{ width: "100%" }} size="small"/>
                         <Col  span={7} style={{paddingRight: '1px'}}>
-                            <Text className="labelSmallText">WORK EXPERIENCE:</Text>
                         </Col>
-                        <SelectReferenceType className="filter-select" referenceType={ReferenceType.workExperience}
-                            colSpan={7} onChange={handleChangeWorkExperience}
-                            value={filterOption?.workExperience.id === -1? undefined : filterOption?.workExperience.value}
-                            dropdownMatchSelectWidth={165}
-                            showPlaceHolderAsOption={true}
-                            showArrow={true}
-                            placeholder={"# of years"} style={{ width: "100%" }} size="small"/>
                     </WbRow>
                 </div> }
-                { isMobile() && isFilterOptionExpanded && 
+                { isMobile() && isFilterOptionExpanded &&
                 <div className="searchOptionBox">
                     <WbRow style={{ justifyContent: "space-between", alignItems: "center" }}>
                         <Col span={8}>
@@ -371,17 +342,6 @@ const SearchResultsBox: FunctionComponent = () => {
                             showArrow={true}
                             placeholder={"Level"} style={{ width: "100%" }} size="small"/>
                     </WbRow>
-                    <WbRow style={{ justifyContent: "space-between", alignItems: "center", marginTop: "5px" }}>
-                        <Col span={8}>
-                            <Text className="labelSmallText">WORK EXPERIENCE:</Text>
-                        </Col>
-                        <SelectReferenceType className="filter-select" referenceType={ReferenceType.workExperience}
-                            colSpan={16} onChange={handleChangeWorkExperience}
-                            value={filterOption?.workExperience.id === -1? undefined : filterOption?.workExperience.value}
-                            showPlaceHolderAsOption={true}
-                            showArrow={true}
-                            placeholder={"# of years"} style={{ width: "100%" }} size="small"/>
-                    </WbRow>
                 </div> }
                 <div className="searchResultBox">
                     <div className="scrollListBox" style={scrollHeight}>
@@ -402,7 +362,7 @@ const SearchResultsBox: FunctionComponent = () => {
                         ^ Back to top
                     </Button>
                 </div>
-                    
+
             </div>
         }
         </>

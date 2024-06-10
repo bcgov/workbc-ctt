@@ -16,7 +16,7 @@ const ResultDetailsBox: FunctionComponent = () => {
         searchPerformed, foundSkill, profileImagePath } = useCareerSkillContext()
 
     const [ title, setTitle ] = useState<string | undefined>()
-    
+
     const [ profileImage, setProfileImage ] = useState<string>(profileImagePath + getProfileImageName(selectedSkill.noc))
 
     useEffect(() => {
@@ -55,8 +55,8 @@ const ResultDetailsBox: FunctionComponent = () => {
         window.snowplow('trackSelfDescribingEvent', {
             schema: 'iglu:ca.bc.gov.workbc/careertransitiontool/jsonschema/1-0-0',
             data: {
-                current: searchInput.getValue(),                
-                option: selectedSkill.noc,                
+                current: searchInput.getValue(),
+                option: selectedSkill.noc,
                 action: 'view'
             }
         });
@@ -111,14 +111,8 @@ const ResultDetailsBox: FunctionComponent = () => {
                     </WbRow>
                     <WbRow >
                         <Col className="detailBox__row">
-                            <label>Education:</label>                     
+                            <label>Education:</label>
                             <label className="strong details detailBox__row--label">{ selectedSkill?.education?.value }</label>
-                        </Col>
-                    </WbRow>
-                    <WbRow>
-                        <Col className="detailBox__row">
-                            <label> Work experience:</label>
-                            <label className="strong details detailBox__row--label">{ selectedSkill?.workExperience?.value }</label>
                         </Col>
                     </WbRow>
                     <WbRow style={{marginTop: 25, justifyContent: "flex-end"}}>
@@ -126,7 +120,7 @@ const ResultDetailsBox: FunctionComponent = () => {
                             <Button className="detailBox__button" onClick={showCareerProfile}>VIEW FULL CAREER PROFILE  <ForwardOutlined style={{ fontSize: '26px'}}/></Button>
                         </Col>
                     </WbRow>
-                    
+
                 </div>
             }
         </>
