@@ -78,24 +78,28 @@ let memoReferenceType = {
   ],
   [ep.referenceType.educationLevels]: [
     {
+        "id": 0,
+        "value": "Management"
+    },
+    {
         "id": 1,
-        "value": "Less than High School"
+        "value": "University Degree"
     },
     {
         "id": 2,
-        "value": "High School"
+        "value": "College Diploma or Apprenticeship, 2 or more years"
     },
     {
         "id": 3,
-        "value": "Apprenticeship Certificate"
+        "value": "College Diploma or Apprenticeship, less than 2 years"
     },
     {
         "id": 4,
-        "value": "Diploma/Certificate Excluding Apprenticeship"
+        "value": "High School Diploma"
     },
     {
         "id": 5,
-        "value": "Degree"
+        "value": "No Formal Education"
     }
   ],
   [ep.referenceType.similarities]: [{"id":1,"value":"All"},{"id":2,"value":"Medium"},{"id":3,"value":"High"}],
