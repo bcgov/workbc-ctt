@@ -1,9 +1,11 @@
+--Added 2 new columns Minimum and Maximum for each salary range in Salaries table.
 ALTER TABLE Salaries
-ADD Minimum varchar(max);
+ADD Minimum decimal(20,4);
 
 ALTER TABLE Salaries
-ADD Maximum varchar(max);
+ADD Maximum decimal(20,4);
 
+--Updated the values in the 2 new columns Minimum and Maximum for each salary range in Salaries table.
 Update Salaries SET Minimum = 11000, Maximum = 33000
 where Id=1
 
@@ -25,9 +27,14 @@ where Id=6
 Update Salaries SET Minimum = 125001, Maximum = null
 where Id=7
 
---Select * from Salaries
-
+--Updated the SalaryRangeId column in Occupations table from the salary range in Salaries table.
 Update Occupations Set SalaryRangeId = (
-Select Id from Salaries where Occupations.Income BETWEEN Salaries.Minimum AND Salaries.Maximum
+Select Id from Salaries where TRY_CAST (Income AS decimal(20,4)) BETWEEN Salaries.Minimum AND Salaries.Maximum
 )
+
+Update Occupations Set SalaryRangeId = 7
+where Income > 125000.0000
+
+
+
 
