@@ -1,9 +1,20 @@
 --Added 2 new columns Minimum and Maximum for each salary range in Salaries table.
-ALTER TABLE Salaries
-ADD Minimum decimal(20,4);
-
-ALTER TABLE Salaries
-ADD Maximum decimal(20,4);
+IF NOT EXISTS (SELECT 1
+        FROM INFORMATION_SCHEMA.COLUMNS
+        WHERE upper(TABLE_NAME) = 'Salaries'
+        AND upper(COLUMN_NAME) = 'Minimum')
+BEGIN
+    ALTER TABLE [dbo].[Salaries] ADD Minimum decimal(20,4)
+END
+GO
+IF NOT EXISTS (SELECT 1
+        FROM INFORMATION_SCHEMA.COLUMNS
+        WHERE upper(TABLE_NAME) = 'Salaries'
+        AND upper(COLUMN_NAME) = 'Maximum')
+BEGIN
+    ALTER TABLE [dbo].[Salaries] ADD Maximum decimal(20,4)
+END
+GO
 
 --Updated the values in the 2 new columns Minimum and Maximum for each salary range in Salaries table.
 Update Salaries SET Minimum = 11000, Maximum = 33000
