@@ -1,0 +1,16 @@
+	1. Take a backup of WorkBC_CareerTransitionTool database.
+	2. Download all the files from https://github.com/bcgov/workbc-ctt/tree/master/SSOT folder.
+	3. Copy all the above files into the following folder path(create the folder structure if not present) : C:\src_ctt\SSOT
+	4. Connect to WorkBC_CareerTransitionTool DB.
+	5. Run the SQL scripts in  in the sequence provided below:
+		a. UpdateOccupationId.sql
+		b. UpdateOccupationsWithNOC2021.sql
+		c. UpdateOccupationsWithNewIncome.sql
+		d. UpdateOccupationsWithNewSalaryRangeId.sql
+		e. UpdateEducationLevels.sql
+		f. UpdateOccupationsWithNewEducationId.sql
+		
+	6. Share results by running the following queries:
+		a. Select * from EducationLevels
+		b. Select * from Salaries
+		c. Select * from Occupations
