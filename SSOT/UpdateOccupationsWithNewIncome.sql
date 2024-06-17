@@ -25,8 +25,8 @@ BEGIN
    SET @Counter  = @Counter  + 1        
 END
 
---Select * from Occupations
- 
 Drop table #TempWages
+
+Select * from Occupations
 
 

@@ -35,6 +35,7 @@ Select Id from Salaries where TRY_CAST (Income AS decimal(20,4)) BETWEEN Salarie
 Update Occupations Set SalaryRangeId = 7
 where Income > 125000.0000
 
+Select * from Occupations
 
 
 
