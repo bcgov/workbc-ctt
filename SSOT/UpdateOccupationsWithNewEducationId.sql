@@ -11,8 +11,6 @@ WITH
     [teer_level] varchar(5) 
 )
 
-Select * from #TempNocs
-
 Update Occupations Set EducationId = 
 (Select teer_level from #TempNocs
 where Occupations.NOC = #TempNocs.noc_2021)
