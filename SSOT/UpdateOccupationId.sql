@@ -23,8 +23,6 @@ ALTER TABLE Occupations DROP COLUMN Id
 ALTER TABLE Occupations ADD Id INT IDENTITY(1,1) not null
 CONSTRAINT PK__Occupati__3214EC07E5E92210 PRIMARY KEY CLUSTERED
 
---EXEC sp_rename 'Occupations.Id_new', 'Id', 'COLUMN'
-
 -- Add the FK back to the tables
 ALTER TABLE [dbo].[CommonJobTitles]  WITH CHECK ADD  CONSTRAINT [FK_CommonJobTitles_Occupations] FOREIGN KEY([OccupationId])
 REFERENCES [dbo].[Occupations] ([Id])

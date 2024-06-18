@@ -10,6 +10,8 @@ WITH
     [label] varchar(50) 
 )
 
+DBCC CHECKIDENT ('dbo.Occupations', RESEED, 0);
+
 INSERT INTO Occupations(NOC, Title) 
 Select noc_2021, label from #TempOccupations;
 
