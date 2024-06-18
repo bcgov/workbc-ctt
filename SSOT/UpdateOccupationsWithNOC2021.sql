@@ -11,7 +11,7 @@ WITH
 )
 
 --Resetting Occupations table's id column
-DBCC CHECKIDENT ('dbo.Occupations', RESEED, 0);
+DBCC CHECKIDENT ('dbo.Occupations', RESEED, 1);
 
 --Insert Occupations table records from temp table
 INSERT INTO Occupations(NOC, Title) 

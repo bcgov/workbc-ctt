@@ -42,7 +42,7 @@ ALTER TABLE OccupationMatches ADD Id INT IDENTITY(1,1) not null
 CONSTRAINT PK__Occupati__3214EC0718151429 PRIMARY KEY CLUSTERED
 
 --Resetting the ID column
-DBCC CHECKIDENT ('dbo.OccupationMatches', RESEED, 0);
+DBCC CHECKIDENT ('dbo.OccupationMatches', RESEED, 1);
 
 --Inserting the records to OccupationMatches table from temp table.
 Insert into OccupationMatches(CurrentoccupationId, MatchedOccupationId, SimilarityId)
