@@ -4,7 +4,7 @@ $filepath = Join-Path $pathPrefix $pathSuffix
 Write-Output $filepath
 $publicUrl = "GATSBY_PUBLIC_URL=./"
 $apiUrl = "GATSBY_API_URL=./api"
-$carouselNoc = "CAROUSEL_IMAGES=2122,2175"
-Add-Content $filepath $publicUrl 
+$carouselNoc = "CAROUSEL_IMAGES=21111,21233"
+Add-Content $filepath $publicUrl
 Add-Content $filepath $apiUrl
 Add-Content $filepath $carouselNoc

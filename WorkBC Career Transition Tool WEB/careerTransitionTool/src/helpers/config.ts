@@ -30,7 +30,7 @@ export function getUrlForDefaultProfileImage():string {
 }
 
 export function getCareerProfileLink(noc: string) {
-    return "https://www.workbc.ca/Jobs-Careers/Explore-Careers/Browse-Career-Profile/" + noc
+    return "https://www.workbc.ca/career/" + noc
 }
 
 export function getPublicUrl(): string {
