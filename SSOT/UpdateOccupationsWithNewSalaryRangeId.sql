@@ -42,10 +42,11 @@ where Id=7
 Update Occupations Set SalaryRangeId = (
 Select Id from Salaries where TRY_CAST (Income AS decimal(20,4)) BETWEEN Salaries.Minimum AND Salaries.Maximum
 )
-
+--Updated the SalaryRangeId column in Occupations table for the salary range of > 125K.
 Update Occupations Set SalaryRangeId = 7
 where Income > 125000.0000
 
+--Check results
 Select * from Occupations
 
 

@@ -1,4 +1,4 @@
--- Delete the content from teh relevant tables
+-- Delete the content from the relevant tables
 delete from OccupationMatches
 delete from CommonJobTitles
 delete from Occupations
