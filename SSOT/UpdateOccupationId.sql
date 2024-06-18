@@ -1,4 +1,4 @@
--- Delete the content from teh relevant tables
+-- Delete the content from the relevant tables
 delete from OccupationMatches
 delete from CommonJobTitles
 delete from Occupations
@@ -22,8 +22,6 @@ ALTER TABLE Occupations DROP COLUMN Id
 -- Create the id column and add it as PK
 ALTER TABLE Occupations ADD Id INT IDENTITY(1,1) not null
 CONSTRAINT PK__Occupati__3214EC07E5E92210 PRIMARY KEY CLUSTERED
-
---EXEC sp_rename 'Occupations.Id_new', 'Id', 'COLUMN'
 
 -- Add the FK back to the tables
 ALTER TABLE [dbo].[CommonJobTitles]  WITH CHECK ADD  CONSTRAINT [FK_CommonJobTitles_Occupations] FOREIGN KEY([OccupationId])
