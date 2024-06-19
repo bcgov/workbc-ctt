@@ -36,19 +36,19 @@ namespace TransferrableSkillsToolAPI.Repositories
                 new Occupation
                 {
                     Id = 1,
-                    NOC = "0011",
+                    NOC = "00010",
                     Title = "Legislators"
                 },
                 new Occupation
                 {
                     Id = 2,
-                    NOC = "0012",
+                    NOC = "00018",
                     Title = "Senior government managers and officials"
                 },
                 new Occupation
                 {
                     Id = 3,
-                    NOC = "0013",
+                    NOC = "00018",
                     Title = "Senior managers - financial, communications and other business services"
                 }
             }.AsQueryable();
