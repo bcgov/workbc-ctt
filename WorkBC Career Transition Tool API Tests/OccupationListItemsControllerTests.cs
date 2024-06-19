@@ -45,14 +45,14 @@ namespace TransferrableSkillsToolAPITests
         }
 
         [Fact]
-        public async void TestGetOccupationListItems_Controller_0011_Has_One_Match()
+        public async void TestGetOccupationListItems_Controller_00010_Has_One_Match()
         {
             // Arrange
-            var dbContext = DbContextMocker.GetOccupationListItemContext(nameof(TestGetOccupationListItems_Controller_0011_Has_One_Match));
+            var dbContext = DbContextMocker.GetOccupationListItemContext(nameof(TestGetOccupationListItems_Controller_00010_Has_One_Match));
             var controller = new OccupationListItemsController(dbContext);
 
             // Act
-            var response = await controller.GetOccupationListItems("0011") as ActionResult<IEnumerable<OccupationListItem>>;
+            var response = await controller.GetOccupationListItems("00010") as ActionResult<IEnumerable<OccupationListItem>>;
             var value = response.Value as List<OccupationListItem>;
 
             dbContext.Dispose();
@@ -62,14 +62,14 @@ namespace TransferrableSkillsToolAPITests
         }
 
         [Fact]
-        public async void TestGetOccupationListItemsLevels_Repository_0011_Has_One_Match()
+        public async void TestGetOccupationListItemsLevels_Repository_00010_Has_One_Match()
         {
             // Arrange
-            var dbContext = DbContextMocker.GetOccupationListItemContext(nameof(TestGetOccupationListItemsLevels_Repository_0011_Has_One_Match));
+            var dbContext = DbContextMocker.GetOccupationListItemContext(nameof(TestGetOccupationListItemsLevels_Repository_00010_Has_One_Match));
             var repo = new OccupationListItemRepository(dbContext);
 
             // Act
-            var value = repo.GetOccupationListItems("0011") as List<OccupationListItem>;
+            var value = repo.GetOccupationListItems("00010") as List<OccupationListItem>;
             
             dbContext.Dispose();
 

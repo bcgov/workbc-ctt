@@ -108,7 +108,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                     new Occupation
                     {
                         Id = 1,
-                        NOC = "0011",
+                        NOC = "00010",
                         Title = "Legislators",
                         EducationId = 4,
                         Education = new EducationLevel() {Id = 4, Value = "Degree"},
@@ -127,7 +127,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                     new Occupation
                     {
                         Id = 1,
-                        NOC = "0011",
+                        NOC = "00010",
                         Title = "Legislators",
                         EducationId = 4,
                         Education = new EducationLevel() {Id = 4, Value = "Degree"},
@@ -143,7 +143,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Id = 2,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
-                                NOC = "0012",
+                                NOC = "00018",
                                 Title = "Senior government managers and officials",
                                 EducationId = 4,
                                 Education = new EducationLevel() {Id = 4, Value = "Degree"},
@@ -158,7 +158,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Id = 3,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
-                                NOC = "0013",
+                                NOC = "00018",
                                 Title = "Senior managers - financial, communications and other business services",
                                 EducationId = 4,
                                 Education = new EducationLevel() {Id = 4, Value = "Degree"},
@@ -173,7 +173,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Id = 4,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
-                                NOC = "0014",
+                                NOC = "00018",
                                 Title =
                                     "Senior managers - health, education, social and community services and membership organizations",
                                 EducationId = 4,
@@ -189,7 +189,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Id = 14,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
-                                NOC = "0125",
+                                NOC = "10029",
                                 Title = "Other business services managers",
                                 EducationId = 3,
                                 Education = new EducationLevel() {Id = 3, Value = "Diploma/Certificate"},

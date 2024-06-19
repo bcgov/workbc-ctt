@@ -31,7 +31,7 @@ namespace TransferrableSkillsToolAPITests
                 similaritiesContext);
 
             // Act
-            var response = await controller.GetOccupations("0011" ,null , null, null, null) as ActionResult<IEnumerable<Occupation>>;
+            var response = await controller.GetOccupations("00010", null , null, null, null) as ActionResult<IEnumerable<Occupation>>;
             var value = response.Value as List<Occupation>;
 
             dbContext.Dispose();
@@ -58,7 +58,7 @@ namespace TransferrableSkillsToolAPITests
                 similaritiesContext);
 
             // Act
-            var value = repo.GetOccupations("0011", null, null, null, null) as List<Occupation>;
+            var value = repo.GetOccupations("00010", null, null, null, null) as List<Occupation>;
             
             dbContext.Dispose();
 
