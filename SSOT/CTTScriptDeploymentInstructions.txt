@@ -11,6 +11,7 @@
 		f. UpdateOccupationsWithNewEducationId.sql
 		g. UpdateCommonJobTitlesWithNOC2021.sql
 		h. UpdateOccupationMatchesWithNOC2021.sql
+		i. DeleteMaximumMinimumSalaries.sql
 		
 	6. Share results by running the following queries:
 		a. Select * from EducationLevels
