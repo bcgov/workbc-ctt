@@ -62,16 +62,16 @@ const SearchNav: FunctionComponent = () => {
     function performSearch() {
       //console.log("search text: value = " + searchText)
       if (!!searchText) {
-        setSelectedNoc(searchText.substr(0, 4))
+        setSelectedNoc(searchText.substr(0, 5))
         //snowplow event pass selectedSkill.noc
         window.snowplow('trackSelfDescribingEvent', {
           schema: 'iglu:ca.bc.gov.workbc/careertransitiontool/jsonschema/1-0-0',
           data: {
-              current: searchText.substr(0, 4),
+              current: searchText.substr(0, 5),
               action: 'find'
           }
         });
-        searchInput.setValue(searchText.substr(0, 4));
+        searchInput.setValue(searchText.substr(0, 5));
       } else {
         setErrorText("Please enter job title, Keyword(s) or NOC.")
       }
@@ -82,7 +82,7 @@ const SearchNav: FunctionComponent = () => {
       window.snowplow('trackSelfDescribingEvent', {
         schema: 'iglu:ca.bc.gov.workbc/careertransitiontool/jsonschema/1-0-0',
         data: {
-            current: searchText.substr(0, 4),
+            current: searchText.substr(0, 5),
             action: 'clear'
         }
       });
