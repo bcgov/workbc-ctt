@@ -18,7 +18,7 @@ namespace TransferrableSkillsToolAPI.Repositories
         private readonly ISimilarityContext _similarityContext;
 
         public OccupationRepository(IOccupationContext dbContext,
-            IWorkExperienceContext workExperienceContext, 
+            IWorkExperienceContext workExperienceContext,
             ISalaryContext salaryRangeContext,
             IEducationLevelContext educationLevelContext,
             IOccupationMatchContext occupationMatchContext,
@@ -41,15 +41,15 @@ namespace TransferrableSkillsToolAPI.Repositories
         {
             if (NOC != null)
                 return FindMatchingOccupations(NOC, similarityId, educationLevelId, salaryId, workExperienceId);
-            
+
             return GetOccupationsPrivate(false, NOC);
         }
 
         private List<Occupation> GetOccupationsPrivate(bool returnMatches, string NOC)
         {
-            if (!_context.IsSQLServer) 
+            if (!_context.IsSQLServer)
                 return GetStaticOccupations(returnMatches);
-            
+
             var occupations = _context.Occupations.ToList();
                 
             if (!string.IsNullOrEmpty(NOC))
@@ -59,13 +59,13 @@ namespace TransferrableSkillsToolAPI.Repositories
             var localSalaryRangesList = _salaryRangeContext.Salaries.ToList();
             var localEducationLevelsList = _educationLevelContext.EducationLevels.ToList();
             var localSimilaritiesList = _similarityContext.Similarities.ToList();
-
+  
             foreach (var occupation in occupations)
             {
                 occupation.WorkExperience = localWorkExperiencesList.FindAll(x => x.Id == occupation.WorkExperienceId).FirstOrDefault();
                 occupation.SalaryRange = localSalaryRangesList.FindAll(x => x.Id == occupation.SalaryRangeId).FirstOrDefault();
                 occupation.Education = localEducationLevelsList.FindAll(x => x.Id == occupation.EducationId).FirstOrDefault();
-                    
+
                 var occupationId = new SqlParameter("occupationId", occupation.Id);
                 var localOccupationMatchesList = _occupationMatchContext.FromSQLRaw(@"select 
 	                        MatchedOccupation.Id,
@@ -111,12 +111,12 @@ namespace TransferrableSkillsToolAPI.Repositories
                         NOC = "00010",
                         Title = "Legislators",
                         EducationId = 4,
-                        Education = new EducationLevel() {Id = 4, Value = "Degree"},
+                        Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                         WorkExperienceId = 4,
                         WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                         Income = "59,545",
-                        SalaryRangeId = 2,
-                        SalaryRange = new Salary() {Id = 2, Value = "$40k-$60k"}
+                        SalaryRangeId = 4,
+                        SalaryRange = new Salary() {Id = 4, Value = "$53,001 - 66,000", }
                     }
                 };
             }
@@ -130,12 +130,12 @@ namespace TransferrableSkillsToolAPI.Repositories
                         NOC = "00010",
                         Title = "Legislators",
                         EducationId = 4,
-                        Education = new EducationLevel() {Id = 4, Value = "Degree"},
+                        Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                         WorkExperienceId = 4,
                         WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                         Income = "59,545",
-                        SalaryRangeId = 2,
-                        SalaryRange = new Salary() {Id = 2, Value = "$40k-$60k"},
+                        SalaryRangeId = 4,
+                        SalaryRange = new Salary() {Id = 4, Value = "$53,001 - 66,000"},
                         OccupationMatches = new List<OccupationMatch>()
                         {
                             new OccupationMatch
@@ -146,12 +146,12 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 NOC = "00018",
                                 Title = "Senior government managers and officials",
                                 EducationId = 4,
-                                Education = new EducationLevel() {Id = 4, Value = "Degree"},
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                                 WorkExperienceId = 4,
                                 WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                                 Income = "108,727",
-                                SalaryRangeId = 5,
-                                SalaryRange = new Salary() {Id = 5, Value = "> 100k"}
+                                SalaryRangeId = 6,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000s"}
                             },
                             new OccupationMatch
                             {
@@ -161,12 +161,12 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 NOC = "00018",
                                 Title = "Senior managers - financial, communications and other business services",
                                 EducationId = 4,
-                                Education = new EducationLevel() {Id = 4, Value = "Degree"},
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                                 WorkExperienceId = 4,
                                 WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                                 Income = "119,882",
-                                SalaryRangeId = 5,
-                                SalaryRange = new Salary() {Id = 5, Value = "> 100k"}
+                                SalaryRangeId = 6,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000"}
                             },
                             new OccupationMatch()
                             {
@@ -177,27 +177,27 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Title =
                                     "Senior managers - health, education, social and community services and membership organizations",
                                 EducationId = 4,
-                                Education = new EducationLevel() {Id = 4, Value = "Degree"},
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                                 WorkExperienceId = 3,
                                 WorkExperience = new WorkExperience() {Id = 3, Value = "> 1 year to 4 years"},
                                 Income = "96,077",
-                                SalaryRangeId = 4,
-                                SalaryRange = new Salary() {Id = 4, Value = "$80k-$100k"}
+                                SalaryRangeId = 6,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000"}
                             },
                             new OccupationMatch()
                             {
-                                Id = 14,
+                                Id = 5,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
                                 NOC = "10029",
                                 Title = "Other business services managers",
                                 EducationId = 3,
-                                Education = new EducationLevel() {Id = 3, Value = "Diploma/Certificate"},
+                                Education = new EducationLevel() {Id = 2, Value = "College Diploma or Apprenticeship, 2 or more years"},
                                 WorkExperienceId = 4,
                                 WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                                 Income = "59,114",
-                                SalaryRangeId = 2,
-                                SalaryRange = new Salary() {Id = 2, Value = "$40k-$60k"}
+                                SalaryRangeId = 4,
+                                SalaryRange = new Salary() {Id = 4, Value = "$53,001 - 66,000"}
                             }
                         }
                     }
