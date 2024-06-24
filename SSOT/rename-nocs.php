@@ -37,13 +37,13 @@ foreach ($files as $file) {
   }
   $noc_2016 = $matches[1];
   if (!array_key_exists($noc_2016, $concordance)) {
-    fwrite(STDOUT, "ERROR: File {$file} not found in concordance. Ignoring\n");
+    fwrite(STDOUT, "WARNING: File {$file} not found in concordance. Ignoring\n");
     continue;
   }
   foreach ($concordance[$noc_2016] as $noc_2021) {
     $out_file = str_replace($noc_2016, $noc_2021, $file);
     if (array_key_exists($out_file, $out_files)) {
-      fwrite(STDOUT, "ERROR: File {$out_file} for NOC {$noc_2016} was already renamed for NOC {$out_files[$out_file]}. Ignoring\n");
+      fwrite(STDOUT, "WARNING: File {$out_file} for NOC {$noc_2016} was already renamed for NOC {$out_files[$out_file]}. Ignoring\n");
     }
     else {
       $out_files[$out_file] = $noc_2016;
