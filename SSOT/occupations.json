@@ -1,0 +1,2489 @@
+{
+"occ":[
+ {
+  "NOC": 11,
+  "NOC2021": 10,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 12,
+  "NOC2021": 18,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 13,
+  "NOC2021": 18,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 14,
+  "NOC2021": 18,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 15,
+  "NOC2021": 18,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 16,
+  "NOC2021": 18,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 111,
+  "NOC2021": 10010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 112,
+  "NOC2021": 10011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 113,
+  "NOC2021": 10012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 114,
+  "NOC2021": 10019,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 121,
+  "NOC2021": 10020,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 122,
+  "NOC2021": 10021,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 124,
+  "NOC2021": 10022,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 125,
+  "NOC2021": 10029,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 131,
+  "NOC2021": 10030,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 132,
+  "NOC2021": 70021,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 211,
+  "NOC2021": 20010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 212,
+  "NOC2021": 20011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 213,
+  "NOC2021": 20012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 311,
+  "NOC2021": 30010,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 411,
+  "NOC2021": 40010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 412,
+  "NOC2021": 40011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 413,
+  "NOC2021": 40012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 414,
+  "NOC2021": 40019,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 421,
+  "NOC2021": 40020,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 422,
+  "NOC2021": 40021,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 423,
+  "NOC2021": 40030,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 431,
+  "NOC2021": 40040,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 432,
+  "NOC2021": 40041,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 511,
+  "NOC2021": 50010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 512,
+  "NOC2021": 50011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 513,
+  "NOC2021": 50012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 601,
+  "NOC2021": 60010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 621,
+  "NOC2021": 60020,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 631,
+  "NOC2021": 60030,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 632,
+  "NOC2021": 60031,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 651,
+  "NOC2021": 60040,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 711,
+  "NOC2021": 70010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 712,
+  "NOC2021": 70011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 714,
+  "NOC2021": 70012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 731,
+  "NOC2021": 70020,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 811,
+  "NOC2021": 80010,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 821,
+  "NOC2021": 80020,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 822,
+  "NOC2021": 80021,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 823,
+  "NOC2021": 80022,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 911,
+  "NOC2021": 90010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 912,
+  "NOC2021": 90011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 1111,
+  "NOC2021": 11100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1112,
+  "NOC2021": 11101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1113,
+  "NOC2021": 11103,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1114,
+  "NOC2021": 11109,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1121,
+  "NOC2021": 11200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1122,
+  "NOC2021": 11201,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 1123,
+  "NOC2021": 11202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1211,
+  "NOC2021": 12010,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1212,
+  "NOC2021": 12011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 1213,
+  "NOC2021": 12012,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1214,
+  "NOC2021": 72025,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 1215,
+  "NOC2021": 12013,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1221,
+  "NOC2021": 13100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1222,
+  "NOC2021": 12100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1223,
+  "NOC2021": 12101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1224,
+  "NOC2021": 13101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1225,
+  "NOC2021": 12102,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1226,
+  "NOC2021": 12103,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1227,
+  "NOC2021": 12104,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1228,
+  "NOC2021": 43203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1241,
+  "NOC2021": 13110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1242,
+  "NOC2021": 13111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1243,
+  "NOC2021": 13112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1251,
+  "NOC2021": 12110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1252,
+  "NOC2021": 12111,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1253,
+  "NOC2021": 12112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1254,
+  "NOC2021": 12113,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1311,
+  "NOC2021": 12200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1312,
+  "NOC2021": 12201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1313,
+  "NOC2021": 12202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1314,
+  "NOC2021": 12203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1315,
+  "NOC2021": 13200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1411,
+  "NOC2021": 14100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1414,
+  "NOC2021": 14101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1415,
+  "NOC2021": 14102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1416,
+  "NOC2021": 14103,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1422,
+  "NOC2021": 14111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1423,
+  "NOC2021": 14112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1431,
+  "NOC2021": 14200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1432,
+  "NOC2021": 13102,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1434,
+  "NOC2021": 14201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1435,
+  "NOC2021": 14202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1451,
+  "NOC2021": 14300,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1452,
+  "NOC2021": 14301,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1454,
+  "NOC2021": 14110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1511,
+  "NOC2021": 64401,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 1512,
+  "NOC2021": 74100,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 1513,
+  "NOC2021": 74102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1521,
+  "NOC2021": 74102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1522,
+  "NOC2021": 14401,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1523,
+  "NOC2021": 14402,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 1524,
+  "NOC2021": 14403,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1525,
+  "NOC2021": 14404,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 1526,
+  "NOC2021": 14405,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 2111,
+  "NOC2021": 21100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2112,
+  "NOC2021": 21101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2113,
+  "NOC2021": 21102,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2114,
+  "NOC2021": 21103,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2115,
+  "NOC2021": 21109,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2121,
+  "NOC2021": 21110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2122,
+  "NOC2021": 21111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2123,
+  "NOC2021": 21112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2131,
+  "NOC2021": 21300,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2132,
+  "NOC2021": 21301,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2133,
+  "NOC2021": 21310,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2134,
+  "NOC2021": 21320,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2141,
+  "NOC2021": 21321,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2142,
+  "NOC2021": 21322,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2143,
+  "NOC2021": 21330,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2144,
+  "NOC2021": 21331,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2145,
+  "NOC2021": 21332,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2146,
+  "NOC2021": 21390,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2147,
+  "NOC2021": 21311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2148,
+  "NOC2021": 21399,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2151,
+  "NOC2021": 21200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2152,
+  "NOC2021": 21201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2153,
+  "NOC2021": 21202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2154,
+  "NOC2021": 21203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2161,
+  "NOC2021": 21210,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2171,
+  "NOC2021": 21220,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2172,
+  "NOC2021": 21221,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2173,
+  "NOC2021": 21222,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2174,
+  "NOC2021": 21232,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2175,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2211,
+  "NOC2021": 22100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2212,
+  "NOC2021": 22101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2221,
+  "NOC2021": 22110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2222,
+  "NOC2021": 22111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2223,
+  "NOC2021": 22112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2224,
+  "NOC2021": 22113,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2225,
+  "NOC2021": 22114,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2231,
+  "NOC2021": 22300,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2232,
+  "NOC2021": 22301,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2233,
+  "NOC2021": 22302,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2234,
+  "NOC2021": 22303,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2241,
+  "NOC2021": 22310,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2242,
+  "NOC2021": 22311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2243,
+  "NOC2021": 22312,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2244,
+  "NOC2021": 22313,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2251,
+  "NOC2021": 22210,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2252,
+  "NOC2021": 22211,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2253,
+  "NOC2021": 22212,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2254,
+  "NOC2021": 22213,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2255,
+  "NOC2021": 22214,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2261,
+  "NOC2021": 22230,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2262,
+  "NOC2021": 22231,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2263,
+  "NOC2021": 22232,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2264,
+  "NOC2021": 22233,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2271,
+  "NOC2021": 72600,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2272,
+  "NOC2021": 72601,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2273,
+  "NOC2021": 72602,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2274,
+  "NOC2021": 72603,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2275,
+  "NOC2021": 72604,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 2281,
+  "NOC2021": 22220,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 2282,
+  "NOC2021": 22221,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 2283,
+  "NOC2021": 22222,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3011,
+  "NOC2021": 31300,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3012,
+  "NOC2021": 31301,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3111,
+  "NOC2021": 31100,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 3112,
+  "NOC2021": 31102,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 3113,
+  "NOC2021": 31110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3114,
+  "NOC2021": 31103,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3121,
+  "NOC2021": 31111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3122,
+  "NOC2021": 31201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3124,
+  "NOC2021": 31302,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3125,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3131,
+  "NOC2021": 31120,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3132,
+  "NOC2021": 31121,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3141,
+  "NOC2021": 31112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3142,
+  "NOC2021": 31202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3143,
+  "NOC2021": 31203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3144,
+  "NOC2021": 31204,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3211,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3212,
+  "NOC2021": 33101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3213,
+  "NOC2021": 32104,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3214,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3215,
+  "NOC2021": 32121,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3216,
+  "NOC2021": 32122,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3217,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3219,
+  "NOC2021": 32124,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3221,
+  "NOC2021": 32110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3222,
+  "NOC2021": 32111,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3223,
+  "NOC2021": 32112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3231,
+  "NOC2021": 32100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3232,
+  "NOC2021": 32200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 3233,
+  "NOC2021": 32101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3234,
+  "NOC2021": 32102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3236,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3237,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3411,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3413,
+  "NOC2021": 33102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 3414,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 4011,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4012,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4021,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4031,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4032,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4033,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4111,
+  "NOC2021": 41100,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 4112,
+  "NOC2021": 41101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4151,
+  "NOC2021": 31200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4152,
+  "NOC2021": 41300,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4153,
+  "NOC2021": 41302,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4154,
+  "NOC2021": 41311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4155,
+  "NOC2021": 41311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4156,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4161,
+  "NOC2021": 41400,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4162,
+  "NOC2021": 41401,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4163,
+  "NOC2021": 41402,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4164,
+  "NOC2021": 41403,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4165,
+  "NOC2021": 41404,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4166,
+  "NOC2021": 41405,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4167,
+  "NOC2021": 41406,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4168,
+  "NOC2021": 41407,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4169,
+  "NOC2021": 41409,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4211,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4212,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4214,
+  "NOC2021": 42202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4215,
+  "NOC2021": 42203,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 4216,
+  "NOC2021": 43109,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4311,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4312,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4411,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4412,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4413,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 4421,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 4422,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 4423,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 5111,
+  "NOC2021": 51100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5112,
+  "NOC2021": 51101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5113,
+  "NOC2021": 51102,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5121,
+  "NOC2021": 51100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5122,
+  "NOC2021": 51101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5123,
+  "NOC2021": 51102,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5125,
+  "NOC2021": 51111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5131,
+  "NOC2021": 51112,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 5132,
+  "NOC2021": 51110,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 5133,
+  "NOC2021": 51113,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5134,
+  "NOC2021": 51114,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5135,
+  "NOC2021": 51120,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5136,
+  "NOC2021": 51121,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5211,
+  "NOC2021": 51122,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5212,
+  "NOC2021": 53120,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 5221,
+  "NOC2021": 53122,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5222,
+  "NOC2021": 52100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5223,
+  "NOC2021": 53100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5224,
+  "NOC2021": 53110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5225,
+  "NOC2021": 52110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5226,
+  "NOC2021": 52111,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 5227,
+  "NOC2021": 52112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5231,
+  "NOC2021": 52113,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5232,
+  "NOC2021": 52119,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 5241,
+  "NOC2021": 53111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5242,
+  "NOC2021": 52114,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5243,
+  "NOC2021": 55109,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 5244,
+  "NOC2021": 52120,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5245,
+  "NOC2021": 52121,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5251,
+  "NOC2021": 53123,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 5252,
+  "NOC2021": 53124,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5253,
+  "NOC2021": 53125,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 5254,
+  "NOC2021": 53200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6211,
+  "NOC2021": 53201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6221,
+  "NOC2021": 53202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6222,
+  "NOC2021": 54100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6231,
+  "NOC2021": 63100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6232,
+  "NOC2021": 63101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6235,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6311,
+  "NOC2021": 63100,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6312,
+  "NOC2021": 63101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6313,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6314,
+  "NOC2021": 62023,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6315,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6316,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6321,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6322,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6331,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6332,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6341,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6342,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6343,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6344,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6345,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6346,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6411,
+  "NOC2021": 6411,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6421,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6511,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6512,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6513,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6521,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6522,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6523,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6524,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6525,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6531,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6532,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6533,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6541,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6551,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6552,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6561,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6562,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6563,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6564,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6611,
+  "NOC2021": 65100,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6621,
+  "NOC2021": 65101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 6622,
+  "NOC2021": 65102,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6623,
+  "NOC2021": 65100,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6711,
+  "NOC2021": 65101,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6721,
+  "NOC2021": 65102,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6722,
+  "NOC2021": 65109,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6731,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6732,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6733,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 6741,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 6742,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7201,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7202,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7203,
+  "NOC2021": "null",
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 7204,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7205,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7231,
+  "NOC2021": 72100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7232,
+  "NOC2021": 72101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7233,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7234,
+  "NOC2021": 72100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7235,
+  "NOC2021": 72101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7236,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7237,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7241,
+  "NOC2021": 72200,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 7242,
+  "NOC2021": 72201,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 7243,
+  "NOC2021": 72202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7244,
+  "NOC2021": 72200,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 7245,
+  "NOC2021": 72201,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7246,
+  "NOC2021": 72202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7247,
+  "NOC2021": 72203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7251,
+  "NOC2021": 72300,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7252,
+  "NOC2021": 72301,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7253,
+  "NOC2021": 72302,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7271,
+  "NOC2021": 72300,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7272,
+  "NOC2021": 72301,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7281,
+  "NOC2021": 72302,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7282,
+  "NOC2021": 72310,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7283,
+  "NOC2021": 72311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7284,
+  "NOC2021": 72320,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7291,
+  "NOC2021": 73100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7292,
+  "NOC2021": 73101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7293,
+  "NOC2021": 73102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7294,
+  "NOC2021": 73110,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7295,
+  "NOC2021": 73111,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7301,
+  "NOC2021": 72321,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7302,
+  "NOC2021": 73112,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7303,
+  "NOC2021": 73113,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7304,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7305,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7311,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7312,
+  "NOC2021": 72401,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7313,
+  "NOC2021": 72402,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7314,
+  "NOC2021": 72403,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7315,
+  "NOC2021": 72401,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7316,
+  "NOC2021": 72402,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7318,
+  "NOC2021": 72403,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7321,
+  "NOC2021": 72404,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7322,
+  "NOC2021": 72405,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7331,
+  "NOC2021": 72406,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7332,
+  "NOC2021": 72410,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7333,
+  "NOC2021": 72411,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7334,
+  "NOC2021": 72420,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7335,
+  "NOC2021": 72421,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7361,
+  "NOC2021": 72422,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7362,
+  "NOC2021": 73311,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7371,
+  "NOC2021": 72429,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7372,
+  "NOC2021": 73310,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7373,
+  "NOC2021": 73311,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7381,
+  "NOC2021": 72500,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7384,
+  "NOC2021": 73402,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7441,
+  "NOC2021": 72501,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7442,
+  "NOC2021": 73401,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7444,
+  "NOC2021": 73202,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7445,
+  "NOC2021": 73200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7451,
+  "NOC2021": 75100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7452,
+  "NOC2021": 73202,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7511,
+  "NOC2021": 73209,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7512,
+  "NOC2021": 75100,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7513,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7514,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7521,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7522,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7531,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7532,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7533,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7534,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7535,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 7611,
+  "NOC2021": "null",
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7612,
+  "NOC2021": 75119,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 7621,
+  "NOC2021": 75212,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 7622,
+  "NOC2021": 75211,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 8211,
+  "NOC2021": 75119,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8221,
+  "NOC2021": 75212,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 8222,
+  "NOC2021": 75211,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 8231,
+  "NOC2021": 82010,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8232,
+  "NOC2021": 82020,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8241,
+  "NOC2021": 82021,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8252,
+  "NOC2021": 83100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8255,
+  "NOC2021": 83101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8261,
+  "NOC2021": 83110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8262,
+  "NOC2021": 83121,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8411,
+  "NOC2021": 84100,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 8412,
+  "NOC2021": 85104,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8421,
+  "NOC2021": 83121,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8422,
+  "NOC2021": 84100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8431,
+  "NOC2021": 84101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8432,
+  "NOC2021": 84110,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8441,
+  "NOC2021": 84111,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8442,
+  "NOC2021": 85104,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 8611,
+  "NOC2021": 85103,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8612,
+  "NOC2021": 84121,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8613,
+  "NOC2021": 85104,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 8614,
+  "NOC2021": 85121,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 8615,
+  "NOC2021": 85102,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 8616,
+  "NOC2021": 85110,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9211,
+  "NOC2021": 85111,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9212,
+  "NOC2021": 85120,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9213,
+  "NOC2021": 92010,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9214,
+  "NOC2021": 92011,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9215,
+  "NOC2021": 92012,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9217,
+  "NOC2021": 92013,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9221,
+  "NOC2021": 92014,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9222,
+  "NOC2021": 92014,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9223,
+  "NOC2021": 92105,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9224,
+  "NOC2021": 92020,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9226,
+  "NOC2021": 92021,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9227,
+  "NOC2021": 92021,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9231,
+  "NOC2021": 92022,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9232,
+  "NOC2021": 92023,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9235,
+  "NOC2021": 92024,
+  "WorkExperienceId": 4
+ },
+ {
+  "NOC": 9241,
+  "NOC2021": 93100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9243,
+  "NOC2021": 93101,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9411,
+  "NOC2021": 93102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9412,
+  "NOC2021": 92100,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9413,
+  "NOC2021": 92101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9414,
+  "NOC2021": 94100,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9415,
+  "NOC2021": 94101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9416,
+  "NOC2021": 94102,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9417,
+  "NOC2021": 94103,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9418,
+  "NOC2021": 94104,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9421,
+  "NOC2021": 94105,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9422,
+  "NOC2021": 94106,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9423,
+  "NOC2021": 94107,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9431,
+  "NOC2021": 94110,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9432,
+  "NOC2021": 94111,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9433,
+  "NOC2021": 94112,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9434,
+  "NOC2021": 94120,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9435,
+  "NOC2021": 94121,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9436,
+  "NOC2021": 94121,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9437,
+  "NOC2021": 94129,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9441,
+  "NOC2021": 94122,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9442,
+  "NOC2021": 94123,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9445,
+  "NOC2021": 94124,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 9446,
+  "NOC2021": 94130,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9447,
+  "NOC2021": 94131,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9461,
+  "NOC2021": 95105,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9462,
+  "NOC2021": 94132,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9463,
+  "NOC2021": 94133,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9465,
+  "NOC2021": 94140,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9471,
+  "NOC2021": 94141,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9472,
+  "NOC2021": 94151,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9473,
+  "NOC2021": 94152,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9474,
+  "NOC2021": 94153,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9521,
+  "NOC2021": 93200,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9522,
+  "NOC2021": 94152,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9523,
+  "NOC2021": 94153,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9524,
+  "NOC2021": 94202,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9525,
+  "NOC2021": 94203,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9526,
+  "NOC2021": 94204,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9527,
+  "NOC2021": 94205,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9531,
+  "NOC2021": 94219,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9532,
+  "NOC2021": 94210,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9533,
+  "NOC2021": 94211,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9534,
+  "NOC2021": 94210,
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9535,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9536,
+  "NOC2021": "null",
+  "WorkExperienceId": 3
+ },
+ {
+  "NOC": 9537,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9611,
+  "NOC2021": 95100,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9612,
+  "NOC2021": 95101,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9613,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9614,
+  "NOC2021": 95103,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9615,
+  "NOC2021": 95104,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9616,
+  "NOC2021": "null",
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9617,
+  "NOC2021": 95106,
+  "WorkExperienceId": 1
+ },
+ {
+  "NOC": 9618,
+  "NOC2021": 95107,
+  "WorkExperienceId": 2
+ },
+ {
+  "NOC": 9619,
+  "NOC2021": 95109,
+  "WorkExperienceId": 2
+ }
+]
+}
