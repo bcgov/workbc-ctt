@@ -37,7 +37,34 @@ namespace TransferrableSkillsToolAPITests
             dbContext.Dispose();
 
             Assert.NotEmpty(value);
-            //Assert.False(value.DidError);
+        }
+
+        [Fact]
+        public async void TestGetOccupations_Controller_NotEmptyWithNullIncome()
+        {
+            // Arrange
+            var dbContext = DbContextMocker.GetOccupationContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+
+            var workExperiencesContext = DbContextMocker.GetWorkExperienceContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+            var salariesContext = DbContextMocker.GetSalaryContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+            var educationLevelsContext = DbContextMocker.GetEducationLevelContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+            var occupationMatchesContext = DbContextMocker.GetOccupationMatchContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+            var similaritiesContext = DbContextMocker.GetSimilarityContext(nameof(TestGetOccupations_Controller_NotEmptyWithNullIncome));
+
+            var controller = new OccupationsController(dbContext,
+                workExperiencesContext,
+                salariesContext,
+                educationLevelsContext,
+                occupationMatchesContext,
+                similaritiesContext);
+
+            // Act
+            var response = await controller.GetOccupations("20010", null, null, null, null) as ActionResult<IEnumerable<Occupation>>;
+            var value = response.Value as List<Occupation>;
+
+            dbContext.Dispose();
+
+            Assert.NotEmpty(value);
         }
 
         [Fact]
@@ -63,7 +90,31 @@ namespace TransferrableSkillsToolAPITests
             dbContext.Dispose();
 
             Assert.NotEmpty(value);
-            //Assert.False(value.DidError);
+        }
+
+        [Fact]
+        public async void TestGetOccupations_Repository_NotEmptyWithNullIncome()
+        {
+            // Arrange
+            var dbContext = DbContextMocker.GetOccupationContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var workExperiencesContext = DbContextMocker.GetWorkExperienceContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var salariesContext = DbContextMocker.GetSalaryContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var educationLevelsContext = DbContextMocker.GetEducationLevelContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var occupationMatchesContext = DbContextMocker.GetOccupationMatchContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var similaritiesContext = DbContextMocker.GetSimilarityContext(nameof(TestGetOccupations_Repository_NotEmptyWithNullIncome));
+            var repo = new OccupationRepository(dbContext,
+                workExperiencesContext,
+                salariesContext,
+                educationLevelsContext,
+                occupationMatchesContext,
+                similaritiesContext);
+
+            // Act
+            var value = repo.GetOccupations("20010", null, null, null, null) as List<Occupation>;
+
+            dbContext.Dispose();
+
+            Assert.NotEmpty(value);
         }
     }
 }
