@@ -117,6 +117,19 @@ namespace TransferrableSkillsToolAPI.Repositories
                         Income = "59,545",
                         SalaryRangeId = 4,
                         SalaryRange = new Salary() {Id = 4, Value = "$53,001 - 66,000", }
+                    },
+                    new Occupation
+                    {
+                        Id = 1,
+                        NOC = "20010",
+                        Title = "Engineering managers",
+                        EducationId = 0,
+                        Education = new EducationLevel() {Id = 0, Value = "Management"},
+                        WorkExperienceId = 4,
+                        WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
+                        Income = "1,25,136",
+                        SalaryRangeId = 7,
+                        SalaryRange = new Salary() {Id = 7, Value = "> $125,000" }
                     }
                 };
             }
@@ -149,13 +162,90 @@ namespace TransferrableSkillsToolAPI.Repositories
                                 Education = new EducationLevel() {Id = 1, Value = "University Degree"},
                                 WorkExperienceId = 4,
                                 WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
+                                Income = null,
+                                SalaryRangeId = null,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000s"}
+                            },
+                            new OccupationMatch
+                            {
+                                Id = 3,
+                                SimilarityId = 3,
+                                Similarity = new Similarity() {Id = 3, Value = "High"},
+                                NOC = "00015",
+                                Title = "Senior managers - financial, communications and other business services",
+                                EducationId = 4,
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
+                                WorkExperienceId = 4,
+                                WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
+                                Income = "119,882",
+                                SalaryRangeId = 6,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000"}
+                            },
+                            new OccupationMatch()
+                            {
+                                Id = 4,
+                                SimilarityId = 3,
+                                Similarity = new Similarity() {Id = 3, Value = "High"},
+                                NOC = "00016",
+                                Title =
+                                    "Senior managers - health, education, social and community services and membership organizations",
+                                EducationId = 4,
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
+                                WorkExperienceId = 3,
+                                WorkExperience = new WorkExperience() {Id = 3, Value = "> 1 year to 4 years"},
+                                Income = "96,077",
+                                SalaryRangeId = 6,
+                                SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000"}
+                            },
+                            new OccupationMatch()
+                            {
+                                Id = 5,
+                                SimilarityId = 3,
+                                Similarity = new Similarity() {Id = 3, Value = "High"},
+                                NOC = "10029",
+                                Title = "Other business services managers",
+                                EducationId = 3,
+                                Education = new EducationLevel() {Id = 2, Value = "College Diploma or Apprenticeship, 2 or more years"},
+                                WorkExperienceId = 4,
+                                WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
+                                Income = "59,114",
+                                SalaryRangeId = 4,
+                                SalaryRange = new Salary() {Id = 4, Value = "$53,001 - 66,000"}
+                            }
+                        }
+                    },
+                    new Occupation
+                    {
+                        Id = 2,
+                        NOC = "20010",
+                        Title = "Engineering managers",
+                        EducationId = 0,
+                        Education = new EducationLevel() {Id = 0, Value = "Management"},
+                        WorkExperienceId = 4,
+                        WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
+                        Income = "1,25,136",
+                        SalaryRangeId = 7,
+                        SalaryRange = new Salary() {Id = 7, Value = "> $125,000" },
+                        OccupationMatches = new List<OccupationMatch>()
+                        {
+                            new OccupationMatch
+                            {
+                                Id = 12,
+                                SimilarityId = 3,
+                                Similarity = new Similarity() {Id = 3, Value = "High"},
+                                NOC = "00018",
+                                Title = "Senior government managers and officials",
+                                EducationId = 4,
+                                Education = new EducationLevel() {Id = 1, Value = "University Degree"},
+                                WorkExperienceId = 4,
+                                WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
                                 Income = "108,727",
                                 SalaryRangeId = 6,
                                 SalaryRange = new Salary() {Id = 6, Value = "$95,001 - 125,000s"}
                             },
                             new OccupationMatch
                             {
-                                Id = 3,
+                                Id = 13,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
                                 NOC = "00018",
@@ -170,7 +260,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                             },
                             new OccupationMatch()
                             {
-                                Id = 4,
+                                Id = 14,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
                                 NOC = "00018",
@@ -186,7 +276,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                             },
                             new OccupationMatch()
                             {
-                                Id = 5,
+                                Id = 15,
                                 SimilarityId = 3,
                                 Similarity = new Similarity() {Id = 3, Value = "High"},
                                 NOC = "10029",
