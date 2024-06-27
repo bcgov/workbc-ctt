@@ -43,7 +43,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                 return FindMatchingOccupations(NOC, similarityId, educationLevelId, salaryId, workExperienceId);
 
             return GetOccupationsPrivate(false, NOC);
-        }
+            }
 
         private List<Occupation> GetOccupationsPrivate(bool returnMatches, string NOC)
         {
@@ -51,10 +51,14 @@ namespace TransferrableSkillsToolAPI.Repositories
                 return GetStaticOccupations(returnMatches);
 
             var occupations = _context.Occupations.ToList();
-                
+            var occupationsFromDB = _context.Occupations.ToList();
+
             if (!string.IsNullOrEmpty(NOC))
                 occupations = occupations.FindAll(x => x.NOC == NOC);
-                
+
+            if (!string.IsNullOrEmpty(NOC))
+                occupationsFromDB = occupationsFromDB.FindAll(x => x.NOC == NOC);
+
             var localWorkExperiencesList = _workExperienceContext.WorkExperiences.ToList();
             var localSalaryRangesList = _salaryRangeContext.Salaries.ToList();
             var localEducationLevelsList = _educationLevelContext.EducationLevels.ToList();
@@ -94,7 +98,12 @@ namespace TransferrableSkillsToolAPI.Repositories
                 occupation.OccupationMatches = localOccupationMatchesList;
             }
 
-            return _context.Occupations.ToList();
+            foreach(var occ in occupationsFromDB)
+            {
+                if (string.IsNullOrEmpty(occ.Income))
+                    occ.Income = "Not Available";
+            }
+            return occupationsFromDB.ToList();
 
         }
 
@@ -121,15 +130,15 @@ namespace TransferrableSkillsToolAPI.Repositories
                     new Occupation
                     {
                         Id = 1,
-                        NOC = "20010",
+                        NOC = "00018",
                         Title = "Engineering managers",
                         EducationId = 0,
                         Education = new EducationLevel() {Id = 0, Value = "Management"},
                         WorkExperienceId = 4,
                         WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
-                        Income = "1,25,136",
-                        SalaryRangeId = 7,
-                        SalaryRange = new Salary() {Id = 7, Value = "> $125,000" }
+                        Income = null,
+                        SalaryRangeId = null,
+                        SalaryRange = null
                     }
                 };
             }
@@ -217,15 +226,15 @@ namespace TransferrableSkillsToolAPI.Repositories
                     new Occupation
                     {
                         Id = 2,
-                        NOC = "20010",
+                        NOC = "00018",
                         Title = "Engineering managers",
                         EducationId = 0,
                         Education = new EducationLevel() {Id = 0, Value = "Management"},
                         WorkExperienceId = 4,
                         WorkExperience = new WorkExperience() {Id = 4, Value = "> 4 years to 10 years"},
-                        Income = "1,25,136",
-                        SalaryRangeId = 7,
-                        SalaryRange = new Salary() {Id = 7, Value = "> $125,000" },
+                        Income = null,
+                        SalaryRangeId = null,
+                        SalaryRange = null,
                         OccupationMatches = new List<OccupationMatch>()
                         {
                             new OccupationMatch
