@@ -63,7 +63,7 @@ namespace TransferrableSkillsToolAPI.Repositories
             foreach (var occupation in occupations)
             {
                 if (string.IsNullOrEmpty(occupation.Income))
-                    occupation.Income = "Not Available";
+                    occupation.Income = "Not available";
                 occupation.WorkExperience = localWorkExperiencesList.FindAll(x => x.Id == occupation.WorkExperienceId).FirstOrDefault();
                 occupation.SalaryRange = localSalaryRangesList.FindAll(x => x.Id == occupation.SalaryRangeId).FirstOrDefault();
                 occupation.Education = localEducationLevelsList.FindAll(x => x.Id == occupation.EducationId).FirstOrDefault();
