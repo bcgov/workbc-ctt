@@ -51,13 +51,9 @@ namespace TransferrableSkillsToolAPI.Repositories
                 return GetStaticOccupations(returnMatches);
 
             var occupations = _context.Occupations.ToList();
-            var occupationsFromDB = _context.Occupations.ToList();
 
             if (!string.IsNullOrEmpty(NOC))
                 occupations = occupations.FindAll(x => x.NOC == NOC);
-
-            if (!string.IsNullOrEmpty(NOC))
-                occupationsFromDB = occupationsFromDB.FindAll(x => x.NOC == NOC);
 
             var localWorkExperiencesList = _workExperienceContext.WorkExperiences.ToList();
             var localSalaryRangesList = _salaryRangeContext.Salaries.ToList();
@@ -66,6 +62,8 @@ namespace TransferrableSkillsToolAPI.Repositories
   
             foreach (var occupation in occupations)
             {
+                if (string.IsNullOrEmpty(occupation.Income))
+                    occupation.Income = "Not Available";
                 occupation.WorkExperience = localWorkExperiencesList.FindAll(x => x.Id == occupation.WorkExperienceId).FirstOrDefault();
                 occupation.SalaryRange = localSalaryRangesList.FindAll(x => x.Id == occupation.SalaryRangeId).FirstOrDefault();
                 occupation.Education = localEducationLevelsList.FindAll(x => x.Id == occupation.EducationId).FirstOrDefault();
@@ -98,12 +96,7 @@ namespace TransferrableSkillsToolAPI.Repositories
                 occupation.OccupationMatches = localOccupationMatchesList;
             }
 
-            foreach(var occ in occupationsFromDB)
-            {
-                if (string.IsNullOrEmpty(occ.Income))
-                    occ.Income = "Not Available";
-            }
-            return occupationsFromDB.ToList();
+            return occupations.ToList();
 
         }
 
