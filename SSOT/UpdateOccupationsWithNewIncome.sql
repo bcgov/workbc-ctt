@@ -9,6 +9,11 @@ WITH
     noc varchar(100), 
     calculated_median_annual_salary varchar(100) 
 )
+
+---Update #TempWages with income as int
+Update #TempWages SET calculated_median_annual_salary = CAST((ROUND(CAST (calculated_median_annual_salary AS NUMERIC(20,4)),0)) AS INT)
+From #TempWages
+
 --Update new income in Occupations table from temp table
 DECLARE @Counter INT , @MaxId INT, 
 		@income NVARCHAR(20)
@@ -29,5 +34,3 @@ Drop table #TempWages
 
 --Check results
 Select * from Occupations
-
-
