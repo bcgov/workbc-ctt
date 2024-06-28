@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using TransferrableSkillsToolAPI.DbContexts.Interfaces;
@@ -91,7 +91,9 @@ namespace TransferrableSkillsToolAPI.Repositories
                     matchedOccupation.SalaryRange = localSalaryRangesList.FindAll(x => x.Id == matchedOccupation.SalaryRangeId).FirstOrDefault();
                     matchedOccupation.Education = localEducationLevelsList.FindAll(x => x.Id == matchedOccupation.EducationId).FirstOrDefault();
                     matchedOccupation.Similarity = localSimilaritiesList.FindAll(x => x.Id == matchedOccupation.SimilarityId).FirstOrDefault();
-                }
+                    if (string.IsNullOrEmpty(matchedOccupation.Income))
+                        matchedOccupation.Income = "Not available";
+                }            
 
                 occupation.OccupationMatches = localOccupationMatchesList;
             }
