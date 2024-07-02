@@ -38,4 +38,4 @@ dotnet run
 ![Screenshot of Swagger UI showing endpoint output.](setup3.png)
 
 ## Frontend Setup
-Refer to the [frontend README](WorkBC Career Transition Tool WEB/careerTransitionTool/README.md).
+Refer to the [frontend README](WorkBC%20Career%20Transition%20Tool%20WEB/careerTransitionTool/README.md).
