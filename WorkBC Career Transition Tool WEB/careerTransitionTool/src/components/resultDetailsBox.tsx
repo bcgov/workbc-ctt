@@ -106,7 +106,7 @@ const ResultDetailsBox: FunctionComponent = () => {
                     <WbRow>
                         <Col className="detailBox__row">
                             <label>Median income:</label>
-                            <label className="strong details detailBox__row--label">{selectedSkill?.income == 'Not available' ? 'Not available' : <CurrencyFormat value={selectedSkill?.income} /> }</label>
+                            <label className="strong details detailBox__row--label">{selectedSkill?.income == 'N.A.' ? 'Not available' : <CurrencyFormat value={selectedSkill?.income} /> }</label>
                         </Col>
                     </WbRow>
                     <WbRow >
