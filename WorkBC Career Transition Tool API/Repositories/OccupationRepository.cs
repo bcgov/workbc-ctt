@@ -63,7 +63,10 @@ namespace TransferrableSkillsToolAPI.Repositories
             foreach (var occupation in occupations)
             {
                 if (string.IsNullOrEmpty(occupation.Income))
+                {
                     occupation.Income = "0";
+                    occupation.SalaryRangeId = 0;
+                }
                 occupation.WorkExperience = localWorkExperiencesList.FindAll(x => x.Id == occupation.WorkExperienceId).FirstOrDefault();
                 occupation.SalaryRange = localSalaryRangesList.FindAll(x => x.Id == occupation.SalaryRangeId).FirstOrDefault();
                 occupation.Education = localEducationLevelsList.FindAll(x => x.Id == occupation.EducationId).FirstOrDefault();
@@ -92,7 +95,11 @@ namespace TransferrableSkillsToolAPI.Repositories
                     matchedOccupation.Education = localEducationLevelsList.FindAll(x => x.Id == matchedOccupation.EducationId).FirstOrDefault();
                     matchedOccupation.Similarity = localSimilaritiesList.FindAll(x => x.Id == matchedOccupation.SimilarityId).FirstOrDefault();
                     if (string.IsNullOrEmpty(matchedOccupation.Income))
+                    {
                         matchedOccupation.Income = "0";
+                        matchedOccupation.SalaryRangeId = 0;
+
+                    }
                 }            
 
                 occupation.OccupationMatches = localOccupationMatchesList;
