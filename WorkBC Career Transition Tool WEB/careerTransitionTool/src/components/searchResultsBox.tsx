@@ -223,7 +223,7 @@ const SearchResultsBox: FunctionComponent = () => {
                             <Text className="labelText">Median income:</Text>
                         </Col>
                         <Col style={{ textAlign: "right"}} span={12}>
-                                <label className="strong">{foundSkill?.income == 'N.A.' ? 'Not available' : <CurrencyFormat value={foundSkill?.income} /> }</label>
+                                <label className="strong">{foundSkill?.income == '0' ? 'Not available' : <CurrencyFormat value={foundSkill?.income} /> }</label>
                         </Col>
                     </WbRow>
                     <WbRow className="foundCareerBox__row" style={{ justifyContent: "space-between", alignItems: "center" }}>
