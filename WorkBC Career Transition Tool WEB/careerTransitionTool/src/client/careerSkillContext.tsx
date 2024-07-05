@@ -205,10 +205,10 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
             filteredList = filteredList.filter((item) => codeMatches(ReferenceType.similarity, item.similarity.id, filterOption.similarity.id))
         }
         if (!!filterOption && (filterOption.salaryRange?? false)) {
-            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.salaryRange, item.salaryRange.id, filterOption.salaryRange.id))
+            filteredList = filteredList.filter((item) => !!item.salaryRange && codeMatches(ReferenceType.salaryRange, item.salaryRange.id, filterOption.salaryRange.id))
         }
         if (!!filterOption && (filterOption.education?? false)) {
-            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.educationLevel, item.education.id, filterOption.education.id)) 
+            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.educationLevel, item.education.id, filterOption.education.id))
         }
         if (!!filterOption && (filterOption.workExperience?? false)) {
             filteredList = filteredList.filter((item) => codeMatches(ReferenceType.workExperience, item.workExperience.id, filterOption.workExperience.id))
@@ -216,11 +216,11 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
 
         dispatch({ type: 'set-filtered-career-options', payload: filteredList })
     }
-    
+
     function codeMatches(codeType: ReferenceType, id: number, filterId: number) {
         if (filterId < 0) { // Default Placeholder
             return true
-        } 
+        }
         if (codeType === ReferenceType.similarity) {
             if (filterId === 1) { // All
                 return true
@@ -274,7 +274,7 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
             backgroundImagePath,
             carouselNocList,
             // second tile width
-            mainBoxWidth, 
+            mainBoxWidth,
             reset,
             setSearchText,
             setSelectedNoc,
