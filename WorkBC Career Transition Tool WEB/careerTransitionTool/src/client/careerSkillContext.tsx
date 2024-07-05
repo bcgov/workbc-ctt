@@ -202,16 +202,16 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
     async function filter() {
         let filteredList: MatchedOccupationModel[] = [ ...similarCareerOptions ]
         if (!!filterOption && (filterOption.similarity?? false)) {
-            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.similarity, item.similarity.id, filterOption.similarity.id))
+            filteredList = filteredList.filter((item) => !!item.similarity && codeMatches(ReferenceType.similarity, item.similarity.id, filterOption.similarity.id))
         }
         if (!!filterOption && (filterOption.salaryRange?? false)) {
             filteredList = filteredList.filter((item) => !!item.salaryRange && codeMatches(ReferenceType.salaryRange, item.salaryRange.id, filterOption.salaryRange.id))
         }
         if (!!filterOption && (filterOption.education?? false)) {
-            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.educationLevel, item.education.id, filterOption.education.id))
+            filteredList = filteredList.filter((item) => !!item.education && codeMatches(ReferenceType.educationLevel, item.education.id, filterOption.education.id))
         }
         if (!!filterOption && (filterOption.workExperience?? false)) {
-            filteredList = filteredList.filter((item) => codeMatches(ReferenceType.workExperience, item.workExperience.id, filterOption.workExperience.id))
+            filteredList = filteredList.filter((item) => !!item.workExperience && codeMatches(ReferenceType.workExperience, item.workExperience.id, filterOption.workExperience.id))
         }
 
         dispatch({ type: 'set-filtered-career-options', payload: filteredList })
