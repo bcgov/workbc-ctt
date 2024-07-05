@@ -12,6 +12,8 @@
 		g. UpdateCommonJobTitlesWithNOC2021.sql
 		h. UpdateOccupationMatchesWithNOC2021.sql
 		i. DeleteMaximumMinimumSalaries.sql
+		j. UpdateOccupationsWithWorkExperience.sql
+
 		
 	6. Share results by running the following queries:
 		a. Select * from EducationLevels
@@ -19,3 +21,4 @@
 		c. Select * from Occupations
 		d. Select * from CommonJobTitles
 		e. Select * from OccupationMatches
+		f. Select * from WorkExperiences
