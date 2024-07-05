@@ -7,7 +7,7 @@ FROM OPENJSON (@JSON)
 WITH 
 (
     [noc_2021] varchar(10), 
-    [label] varchar(50) 
+    [label] varchar(500) 
 )
 
 --Resetting Occupations table's id column
