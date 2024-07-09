@@ -228,7 +228,7 @@ const SearchResultsBox: FunctionComponent = () => {
                     </WbRow>
                     <WbRow className="foundCareerBox__row" style={{ justifyContent: "space-between", alignItems: "center" }}>
                         <Col span={10}>
-                            <Text className="labelText">Education:</Text>
+                                <Text className="labelText">Training, Education, Experience and Responsibilities:</Text>
                         </Col>
                         <Col style={{ textAlign: "right"}} span={14}>
                             <label className="strong">{foundSkill.education.value}</label>
@@ -290,11 +290,11 @@ const SearchResultsBox: FunctionComponent = () => {
                             colSpan={9} onChange={handleChangeSalaryRange}
                             value={filterOption?.salaryRange.id === -1? undefined : filterOption?.salaryRange.value}
                             showArrow={true}
-                            placeholder={"Salary range"} style={{ width: "100%" }} size="small"/>
+                            placeholder={"All"} style={{ width: "100%" }} size="small"/>
                     </WbRow>
                     <WbRow style={{ alignItems: "center", marginTop: "5px"}}>
                         <Col span={4} style={{paddingRight: '1px'}}>
-                            <Text className="labelSmallText">EDUCATION:</Text>
+                                    <Text className="labelSmallText">TRAINING, EDUCATION, EXPERIENCE AND RESPONSIBILITIES:</Text>
                         </Col>
                         <SelectReferenceType className="filter-select" referenceType={ReferenceType.educationLevel}
                             colSpan={6} onChange={handleChangeEducation}
@@ -302,7 +302,7 @@ const SearchResultsBox: FunctionComponent = () => {
                             dropdownMatchSelectWidth={180}
                             showPlaceHolderAsOption={true}
                             showArrow={true}
-                            placeholder={"Level"} style={{ width: "100%" }} size="small"/>
+                            placeholder={"All"} style={{ width: "100%" }} size="small"/>
                         <Col  span={7} style={{paddingRight: '1px'}}>
                         </Col>
                     </WbRow>
@@ -329,18 +329,18 @@ const SearchResultsBox: FunctionComponent = () => {
                             colSpan={16} onChange={handleChangeSalaryRange}
                             value={filterOption?.salaryRange.id === -1? undefined : filterOption?.salaryRange.value}
                             showArrow={true}
-                            placeholder={"Salary range"} style={{ width: "100%" }} size="small"/>
+                            placeholder={"All"} style={{ width: "100%" }} size="small"/>
                     </WbRow>
                     <WbRow style={{ justifyContent: "space-between", alignItems: "center", marginTop: "5px"}}>
                         <Col span={8}>
-                            <Text className="labelSmallText">EDUCATION:</Text>
+                                    <Text className="labelSmallText">TRAINING, EDUCATION, EXPERIENCE AND RESPONSIBILITIES:</Text>
                         </Col>
                         <SelectReferenceType className="filter-select" referenceType={ReferenceType.educationLevel}
                             colSpan={16} onChange={handleChangeEducation}
                             value={filterOption?.education.id === -1? undefined : filterOption?.education.value}
                             showPlaceHolderAsOption={true}
                             showArrow={true}
-                            placeholder={"Level"} style={{ width: "100%" }} size="small"/>
+                            placeholder={"All"} style={{ width: "100%" }} size="small"/>
                     </WbRow>
                 </div> }
                 <div className="searchResultBox">
