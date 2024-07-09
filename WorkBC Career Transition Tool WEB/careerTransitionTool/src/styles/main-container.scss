@@ -36,6 +36,9 @@
   }
   label{
     font-size: 1.0rem;
+    &:first{
+      padding-right: 16px;
+    }
     &.strong{
       font-family: $font-family-bold;
       font-size: 0.825rem;
