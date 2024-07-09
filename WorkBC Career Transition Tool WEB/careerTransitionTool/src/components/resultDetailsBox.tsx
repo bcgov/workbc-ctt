@@ -111,7 +111,7 @@ const ResultDetailsBox: FunctionComponent = () => {
                     </WbRow>
                     <WbRow >
                         <Col className="detailBox__row">
-                            <label>Education:</label>
+                            <label>Training, Education, Experience and Responsibilities:</label>
                             <label className="strong details detailBox__row--label">{ selectedSkill?.education?.value }</label>
                         </Col>
                     </WbRow>
