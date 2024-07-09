@@ -2,9 +2,9 @@ import { CareerSkillModel, FilterOptionModel, MatchedOccupationModel, ReferenceT
 
 export const defaultFilterOption = {
     similarity: { id: -1, value: 'All' },
-    salaryRange: { id: -1, value: 'Salary range' },
+    salaryRange: { id: -1, value: 'All' },
     workExperience:  { id: -1, value: '# of years' },
-    education:  { id: -1, value: 'Level' },
+    education:  { id: -1, value: 'All' },
 }
 
 export interface CareerProfileState {
@@ -64,4 +64,3 @@ export function reducer(state: CareerProfileState = defaultCareerSkillState, act
             return { ...state, filterOption: { ...state.filterOption, workExperience: action.payload }}
     }
 }
-
