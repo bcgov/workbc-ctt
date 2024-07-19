@@ -173,7 +173,7 @@ const SearchResultsBox: FunctionComponent = () => {
 
     function handleChangeEducation(value: Key, options: any) {
         try {
-            if (!!value && !!options && options.value) {
+            if (value != null && !!options && options.value != null) {
                 setFilterOption({id: value as number, value: options.value}, ReferenceType.educationLevel)
             } else {
                 setFilterOption(defaultFilterOption.education, ReferenceType.educationLevel)
