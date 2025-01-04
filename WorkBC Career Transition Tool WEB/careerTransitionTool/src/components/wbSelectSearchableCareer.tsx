@@ -263,7 +263,27 @@ const SelectCareer: FunctionComponent<Props> = ({
                 {!!searchText && matchedOptions?.map(option =>
                     (<Option key={option.key} value={option.value}>
                         <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
-                    </Option>))}
+                </Option>))}
+            {(matchedOptions?.length > 0 || relatedOptions?.length > 0) && (
+                <Option className="divider" key="divider" value="divider" disabled>
+                    <span className="search-results-divider-content">
+                        {!!searchText && matchedOptions?.length === 0 && (
+                            <h5>No match found in titles</h5>
+                        )}
+                        <Divider className="search-results-divider"></Divider>
+                        {!!searchText && relatedOptions?.length === 0 && (
+                            <h5>No related items found</h5>
+                        )}
+                        {!!searchText && relatedOptions?.length > 0 && (
+                            <h6>Other related options</h6>
+                        )}
+                    </span>
+                </Option>
+            )}
+            {!!searchText && relatedOptions?.map(option =>
+                <Option key={option.key} value={option.value}>
+                    <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
+                </Option>)}
         </WbSelect>
     )
 }
