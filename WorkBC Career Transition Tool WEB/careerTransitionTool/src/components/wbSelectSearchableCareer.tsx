@@ -63,7 +63,6 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     const [options, setOptions] = useState<SelectProps<object>['options']>([])
     const [matchedOptions, setMatchedOptions] = useState<SelectProps<object>['options']>()
-    const [relatedOptions, setRelatedOptions] = useState<SelectProps<object>['options']>()
     const [validationMessage, setValidationMessage] = useState<string | undefined>(undefined)
     const [notificationComponent, setNotificationComponent] = useState<ReactNode | null>(undefined)
 
@@ -80,7 +79,6 @@ const SelectCareer: FunctionComponent<Props> = ({
        } else {
             setOptions([])
             setMatchedOptions([])
-            setRelatedOptions([])
             setValidationMessage(undefined)
        }
     }, [searchText])
@@ -129,10 +127,8 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     useEffect(() => {
         if(!!searchText && searchText.length >= getAutoCompleteMinimumLength(searchText)) { // options get generated when searchText is at least of minimum characters
-            const matchedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) >= 0)
-            const relatedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) === -1)
+            const matchedOptions = options
             setMatchedOptions(matchedOptions)
-            setRelatedOptions(relatedOptions)
         }
     }, [options, searchText])
 
@@ -264,19 +260,12 @@ const SelectCareer: FunctionComponent<Props> = ({
                     (<Option key={option.key} value={option.value}>
                         <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
                 </Option>))}
-            {!!searchText && relatedOptions?.map(option =>
-                <Option key={option.key} value={option.value}>
-                    <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
-                </Option>)}
-            {(matchedOptions?.length > 0 || relatedOptions?.length > 0) && (
+
+            {(matchedOptions?.length > 0) && (
                 <Option className="divider" key="divider" value="divider" disabled>
                     <span className="search-results-divider-content">
                         {!!searchText && matchedOptions?.length === 0 && (
                             <h5>No match found in titles</h5>
-                        )}
-                        <Divider className="search-results-divider"></Divider>
-                        {!!searchText && relatedOptions?.length === 0 && (
-                            <h5>No related items found</h5>
                         )}
                     </span>
                 </Option>
