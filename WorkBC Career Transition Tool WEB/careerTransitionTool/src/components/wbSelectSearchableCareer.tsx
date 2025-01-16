@@ -63,7 +63,6 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     const [options, setOptions] = useState<SelectProps<object>['options']>([])
     const [matchedOptions, setMatchedOptions] = useState<SelectProps<object>['options']>()
-    const [relatedOptions, setRelatedOptions] = useState<SelectProps<object>['options']>()
     const [validationMessage, setValidationMessage] = useState<string | undefined>(undefined)
     const [notificationComponent, setNotificationComponent] = useState<ReactNode | null>(undefined)
 
@@ -80,7 +79,6 @@ const SelectCareer: FunctionComponent<Props> = ({
        } else {
             setOptions([])
             setMatchedOptions([])
-            setRelatedOptions([])
             setValidationMessage(undefined)
        }
     }, [searchText])
@@ -129,10 +127,8 @@ const SelectCareer: FunctionComponent<Props> = ({
 
     useEffect(() => {
         if(!!searchText && searchText.length >= getAutoCompleteMinimumLength(searchText)) { // options get generated when searchText is at least of minimum characters
-            const matchedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) >= 0)
-            const relatedOptions = options.filter(option => option.value.toLowerCase().indexOf(searchText.toLowerCase()) === -1)
+            const matchedOptions = options
             setMatchedOptions(matchedOptions)
-            setRelatedOptions(relatedOptions)
         }
     }, [options, searchText])
 
@@ -263,7 +259,7 @@ const SelectCareer: FunctionComponent<Props> = ({
                 {!!searchText && matchedOptions?.map(option =>
                     (<Option key={option.key} value={option.value}>
                         <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
-                    </Option>))}
+                </Option>))}
         </WbSelect>
     )
 }
