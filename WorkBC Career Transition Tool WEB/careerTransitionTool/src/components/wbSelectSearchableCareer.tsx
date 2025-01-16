@@ -260,16 +260,6 @@ const SelectCareer: FunctionComponent<Props> = ({
                     (<Option key={option.key} value={option.value}>
                         <span style={{ whiteSpace: 'pre-line' }}>{option.label}</span>
                 </Option>))}
-
-            {(matchedOptions?.length > 0) && (
-                <Option className="divider" key="divider" value="divider" disabled>
-                    <span className="search-results-divider-content">
-                        {!!searchText && matchedOptions?.length === 0 && (
-                            <h5>No match found in titles</h5>
-                        )}
-                    </span>
-                </Option>
-            )}
         </WbSelect>
     )
 }
