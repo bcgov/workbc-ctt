@@ -27,7 +27,7 @@ function FooterIcons() {
 			</a>
 			{/* Instagram */}
 			<a href="https://www.instagram.com/workbc.ca" target="_blank" rel="noreferrer">
-				<img className="footerIconInstagram" src={InstagramLogo} style={{ height: 40, width: 40 }} alt="Instagram" />
+				<img className="footerIconFacebook" src={InstagramLogo} alt="Instagram" />
 			</a>
 			{/* LinkedIn */}
 			<a href="https://www.linkedin.com/company/official-workbc" target="_blank" rel="noreferrer">
