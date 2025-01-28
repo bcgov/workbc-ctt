@@ -3,7 +3,7 @@ import S from '../styles/footer.module.scss'
 import { BackwardOutlined } from '@ant-design/icons'
 import { useCareerSkillContext } from "../client/careerSkillContext"
 import FacebookLogo from '../images/SVG Facebook Logo_(2021).svg'
-import InstagramLogo from '../images/Instagram.svg'
+import InstagramLogo from '../images/social-icon-instagram.svg'
 
 function FooterIcons() {
 	return (
@@ -26,13 +26,8 @@ function FooterIcons() {
 				</svg>
 			</a>
 			{/* Instagram */}
-			<a href="https://www.instagram.com/workbc.ca" target="_blank" rel="noreferrer">		
-				{/*<img className="footerIconInstagram" src={InstagramLogo} alt="Instagram" />*/}
-				<img
-					src={InstagramLogo}
-					style={{ height: 50, width: 50 }}					
-					alt="Instagram"
-				/>
+			<a href="https://www.instagram.com/workbc.ca" target="_blank" rel="noreferrer">
+				<img className="footerIconInstagram" src={InstagramLogo} style={{ height: 40, width: 40 }} alt="Instagram" />
 			</a>
 			{/* LinkedIn */}
 			<a href="https://www.linkedin.com/company/official-workbc" target="_blank" rel="noreferrer">

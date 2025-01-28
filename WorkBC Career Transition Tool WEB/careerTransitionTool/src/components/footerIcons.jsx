@@ -23,6 +23,10 @@ function FooterIcons({ S }) {
           <path fill="#CC181E" d="M36 18c0 9.94-8.06 18-18 18S0 27.94 0 18 8.06 0 18 0s18 8.06 18 18" />
           <path fill="#FFF" d="M26.177 14.578c-.263-.99-.582-1.6-.96-1.95s-1.164-.436-7.217-.436c-6.052 0-6.837.087-7.215.437-.38.348-.7.96-.96 1.948-.263.99-.292 3.492-.292 3.492 0 3.29.58 4.918 1.338 5.47.758.554 7.13.407 7.13.407s6.373.146 7.13-.407c.756-.553 1.337-2.182 1.337-5.47 0 0-.03-2.503-.29-3.492m-9.893 6.605v-6.227l4.77 3.113-4.77 3.113z" />
         </svg>
+          </a>
+      {/* Instagram */}
+      <a href="https://www.instagram.com/workbc.ca" target="_blank" rel="noreferrer">
+        <img className="footerIconInstagram" src={InstagramLogo} style={{ height: 40, width: 40 }} alt="Instagram" />
       </a>
       {/* LinkedIn */}
       <a href="https://www.linkedin.com/company/official-workbc">
