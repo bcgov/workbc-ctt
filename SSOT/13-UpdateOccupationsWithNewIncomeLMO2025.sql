@@ -29,6 +29,14 @@ BEGIN
    SET @Counter  = @Counter  + 1        
 END
 
+--Updated the SalaryRangeId column in Occupations table from the salary range in Salaries table.
+Update Occupations Set SalaryRangeId = (
+Select Id from Salaries where TRY_CAST (Income AS decimal(20,4)) BETWEEN Salaries.Minimum AND Salaries.Maximum
+)
+--Updated the SalaryRangeId column in Occupations table for the salary range of > 125K.
+Update Occupations Set SalaryRangeId = 7
+where Income > 125000.0000
+
 --Drop temp table
 Drop table #TempWages
 
