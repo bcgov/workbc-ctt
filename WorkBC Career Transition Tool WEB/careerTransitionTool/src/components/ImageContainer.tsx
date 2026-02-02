@@ -24,7 +24,7 @@ const ImageContainer: FunctionComponent = ({children}) => {
 
     const { skills, isValidating, isSettled } = useGetAutocompleteCareerSkill({ partialNOCorTitle: currentNoc?? undefined })
     const { isDetailCardVisible, backgroundImagePath, carouselNocList } = useCareerSkillContext()
-    
+
     const indexRef = useRef(index)
     indexRef.current = index
 
@@ -53,8 +53,8 @@ const ImageContainer: FunctionComponent = ({children}) => {
             indexRef.current = indexRef.current + 1
             setIndex(indexRef.current)
         }, 1000 * interval)
-        return () => { 
-            clearTimeout(timer) 
+        return () => {
+            clearTimeout(timer)
             //setIndex(0)
         }
     }, [interval, imageStyleComponent])
@@ -69,9 +69,9 @@ const ImageContainer: FunctionComponent = ({children}) => {
     }
 
     function getStyleComponent(noc: string): CSSProperties {
-        const imageUrl: string = backgroundImagePath.startsWith("http")? backgroundImagePath + getBackgroundImageName(noc) 
-                                                                : getPublicUrl() + backgroundImagePath + getBackgroundImageName(noc) 
-        console.log('background image = ' + imageUrl) 
+        const imageUrl: string = backgroundImagePath.startsWith("http")? backgroundImagePath + getBackgroundImageName(noc)
+                                                                : getPublicUrl() + backgroundImagePath + getBackgroundImageName(noc)
+        //console.log('background image = ' + imageUrl)
         const styleComponent: CSSProperties = {
             width: "100%",
             height: "auto",
@@ -102,12 +102,12 @@ const ImageContainer: FunctionComponent = ({children}) => {
             <div className="imageWrapper" style={jobDescription && imageStyleComponent}>
                 {children}
                 {jobDescription &&
-                <div className="imageWrapper__cta">                    
+                <div className="imageWrapper__cta">
                     <a href={careerProfileLink} className="imageWrapper__link" target="_blank">{jobDescription}</a>
                 </div>
                 }
                 <div className="imageWrapper__flex-border"></div>
-                <div className={`imageWrapper__overlay ${!isDetailCardVisible ? "": " imageWrapper__overlay--full"}`}></div>            
+                <div className={`imageWrapper__overlay ${!isDetailCardVisible ? "": " imageWrapper__overlay--full"}`}></div>
             </div>
         )
     }

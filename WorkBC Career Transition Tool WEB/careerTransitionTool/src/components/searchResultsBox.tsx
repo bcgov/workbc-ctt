@@ -30,7 +30,7 @@ const SearchResultsBox: FunctionComponent = () => {
 
     useEffect(() => {
         if (!!refWidth) {
-            console.log("second tile : width = " + currentWidth?? 0)
+            //console.log("second tile : width = " + currentWidth?? 0)
             setMainBoxWidth(refWidth)
             setCurrentWidth(refWidth)
         }
@@ -55,7 +55,7 @@ const SearchResultsBox: FunctionComponent = () => {
         try {
             performFiltering()
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
     }
 
@@ -153,7 +153,7 @@ const SearchResultsBox: FunctionComponent = () => {
                 setFilterOption(defaultFilterOption.similarity, ReferenceType.similarity)
             }
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
         //console.log('Current Filter Option: ' + JSON.stringify(filterOption))
     }
@@ -166,7 +166,7 @@ const SearchResultsBox: FunctionComponent = () => {
                 setFilterOption(defaultFilterOption.salaryRange, ReferenceType.salaryRange)
             }
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
         //console.log('Current Filter Option: ' + JSON.stringify(filterOption))
     }
@@ -179,7 +179,7 @@ const SearchResultsBox: FunctionComponent = () => {
                 setFilterOption(defaultFilterOption.education, ReferenceType.educationLevel)
             }
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
         //console.log('Current Filter Option: ' + JSON.stringify(filterOption))
     }

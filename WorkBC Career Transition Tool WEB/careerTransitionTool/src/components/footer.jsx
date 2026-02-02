@@ -53,7 +53,7 @@ function Footer() {
 				toggleShowArrow(Boolean(window.google.translate))
 				setTimeout(() => {
 					if (!document.getElementsByClassName('goog-te-combo')[0].children.length) {
-						console.log('failure')
+						//console.log('failure')
 						setCanTranslate(false)
 					}else{
 						document.getElementById("google-translate-container").style.visibility = "visible"
@@ -117,7 +117,7 @@ function Footer() {
 				<BackwardOutlined className="mobile-navigation__icon" style={{ fontSize: '30px'}}/>
 			</div>
 		}
-	
+
 		</>
 	)
 }

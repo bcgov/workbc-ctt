@@ -12,6 +12,9 @@
   .ant-typography{
     margin-bottom: 0.875rem;
   }
+  .ant-table-tbody>tr>td{
+    animation-duration: 0s !important;
+  }
   h1{
     &.ant-typography{
       font-size: 1.5rem;

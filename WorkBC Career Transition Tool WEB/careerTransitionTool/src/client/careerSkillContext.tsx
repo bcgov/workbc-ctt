@@ -135,7 +135,7 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
             dispatch({ type: 'set-similar-career-options', payload: matchedList})
             dispatch({ type: 'set-filtered-career-options', payload: matchedList})
         } catch (error) {
-            console.log(error)
+            console.error(error)
             setError(error)
         }
     }
@@ -144,7 +144,7 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
         try {
             dispatch({ type: 'set-filtered-career-options', payload: filteredList})
         } catch (error) {
-            console.log(error)
+            console.error(error)
             setError(error)
         }
     }
@@ -153,7 +153,7 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
         try {
             await updateFilterOption(option, type)
         } catch (error) {
-            console.log(error)
+            console.error(error)
             setError(error)
         }
     }
@@ -180,7 +180,7 @@ const CareerSkillContextProvider: FunctionComponent = ({ children }) => {
             await filter()
             //console.log("filtered list = " + JSON.stringify(filteredCareerOptions) + ", filter option = " + JSON.stringify(filterOption))
         } catch (error) {
-            console.log(error)
+            console.error(error)
             setError(error)
         }
     }

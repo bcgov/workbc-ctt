@@ -72,7 +72,7 @@ const ResultDetailsBox: FunctionComponent = () => {
     }
 
     // required log that resolves the google translator issue.
-    console.log('3rd tile : selected skill = ' + selectedSkill.title + ", noc = " + selectedSkill.noc)
+    //console.log('3rd tile : selected skill = ' + selectedSkill.title + ", noc = " + selectedSkill.noc)
 
     return (
         <>
