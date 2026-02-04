@@ -13,7 +13,7 @@
     margin-bottom: 0.875rem;
   }
   .ant-table-tbody>tr>td{
-    animation-duration: 0s !important;
+    transition-property: none !important;
   }
   h1{
     &.ant-typography{
